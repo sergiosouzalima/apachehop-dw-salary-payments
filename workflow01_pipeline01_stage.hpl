@@ -200,6 +200,27 @@
       <bordercolorgreen>58</bordercolorgreen>
       <bordercolorblue>90</bordercolorblue>
     </notepad>
+    <notepad>
+      <note>Formatar data de
+recebimento do salario</note>
+      <xloc>768</xloc>
+      <yloc>384</yloc>
+      <width>147</width>
+      <heigth>42</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
   </notepads>
   <order>
     <hop>
@@ -243,13 +264,18 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>CSV file input 5</from>
-      <to>Add sequence</to>
+      <from>Add sequence</from>
+      <to>Table output 5</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Add sequence</from>
-      <to>Table output 5</to>
+      <from>CSV file input 5</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
+      <to>Add sequence</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -273,7 +299,7 @@
     <valuename>id</valuename>
     <attributes/>
     <GUI>
-      <xloc>848</xloc>
+      <xloc>912</xloc>
       <yloc>240</yloc>
     </GUI>
   </transform>
@@ -739,7 +765,7 @@
     </fields>
     <attributes/>
     <GUI>
-      <xloc>944</xloc>
+      <xloc>912</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -950,17 +976,13 @@
         <stream_name>id</stream_name>
       </field>
     </fields>
-    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
-    <schema/>
     <specify_fields>Y</specify_fields>
     <table>STAGE_FOLHA_PAGAMENTO</table>
-    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
@@ -969,6 +991,43 @@
     <GUI>
       <xloc>1136</xloc>
       <yloc>240</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>Data</name>
+        <rename>Data</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd/MM/yyyy</conversion_mask>
+        <date_format_lenient>true</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>832</xloc>
+      <yloc>320</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
