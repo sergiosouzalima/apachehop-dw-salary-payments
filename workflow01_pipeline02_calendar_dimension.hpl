@@ -219,13 +219,9 @@ Dia, Ano, Mes, Nome do Mes, Dia da Semana, e outras.</note>
     <calculation>
       <calc_type>ADD_DAYS</calc_type>
       <conversion_mask>yyyy-MM-dd</conversion_mask>
-      <currency_symbol/>
-      <decimal_symbol/>
       <field_a>START_DATE</field_a>
       <field_b>SEQUENCE</field_b>
-      <field_c/>
       <field_name>CALENDAR_DATE</field_name>
-      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -233,14 +229,8 @@ Dia, Ano, Mes, Nome do Mes, Dia da Semana, e outras.</note>
     </calculation>
     <calculation>
       <calc_type>YEAR_OF_DATE</calc_type>
-      <conversion_mask/>
-      <currency_symbol/>
-      <decimal_symbol/>
       <field_a>CALENDAR_DATE</field_a>
-      <field_b/>
-      <field_c/>
       <field_name>CALENDAR_YEAR</field_name>
-      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -248,14 +238,8 @@ Dia, Ano, Mes, Nome do Mes, Dia da Semana, e outras.</note>
     </calculation>
     <calculation>
       <calc_type>MONTH_OF_DATE</calc_type>
-      <conversion_mask/>
-      <currency_symbol/>
-      <decimal_symbol/>
       <field_a>CALENDAR_DATE</field_a>
-      <field_b/>
-      <field_c/>
       <field_name>CALENDAR_MONTH</field_name>
-      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -263,14 +247,8 @@ Dia, Ano, Mes, Nome do Mes, Dia da Semana, e outras.</note>
     </calculation>
     <calculation>
       <calc_type>DAY_OF_MONTH</calc_type>
-      <conversion_mask/>
-      <currency_symbol/>
-      <decimal_symbol/>
       <field_a>CALENDAR_DATE</field_a>
-      <field_b/>
-      <field_c/>
       <field_name>CALENDAR_DAY</field_name>
-      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -279,13 +257,8 @@ Dia, Ano, Mes, Nome do Mes, Dia da Semana, e outras.</note>
     <calculation>
       <calc_type>COPY_FIELD</calc_type>
       <conversion_mask>MMMM</conversion_mask>
-      <currency_symbol/>
-      <decimal_symbol/>
       <field_a>CALENDAR_DATE</field_a>
-      <field_b/>
-      <field_c/>
       <field_name>MONTH_NAME</field_name>
-      <grouping_symbol/>
       <remove>N</remove>
       <value_length>24</value_length>
       <value_precision>-1</value_precision>
@@ -294,13 +267,8 @@ Dia, Ano, Mes, Nome do Mes, Dia da Semana, e outras.</note>
     <calculation>
       <calc_type>COPY_FIELD</calc_type>
       <conversion_mask>EEE</conversion_mask>
-      <currency_symbol/>
-      <decimal_symbol/>
       <field_a>CALENDAR_DATE</field_a>
-      <field_b/>
-      <field_c/>
       <field_name>WEEK_DAY_NAME</field_name>
-      <grouping_symbol/>
       <remove>N</remove>
       <value_length>10</value_length>
       <value_precision>-1</value_precision>
@@ -325,7 +293,10 @@ Dia, Ano, Mes, Nome do Mes, Dia da Semana, e outras.</note>
     </partitioning>
     <fields>
       <field>
+        <currency/>
+        <decimal/>
         <format>yyyyMMdd</format>
+        <group/>
         <length>-1</length>
         <name>START_DATE</name>
         <precision>-1</precision>
@@ -337,7 +308,7 @@ Dia, Ano, Mes, Nome do Mes, Dia da Semana, e outras.</note>
     <interval_in_ms>5000</interval_in_ms>
     <last_time_field>FiveSecondsAgo</last_time_field>
     <never_ending>N</never_ending>
-    <limit>5000</limit>
+    <limit>5400</limit>
     <row_time_field>now</row_time_field>
     <attributes/>
     <GUI>
@@ -385,13 +356,13 @@ Dia, Ano, Mes, Nome do Mes, Dia da Semana, e outras.</note>
         <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
         <jsScript_script>// SK_DATE is an integer column type.
-var SK_ID = date2str(CALENDAR_DATE,'yyyyMMdd');</jsScript_script>
+var SK_ID_CALENDAR = date2str(CALENDAR_DATE,'yyyyMMdd');</jsScript_script>
       </jsScript>
     </jsScripts>
     <fields>
       <field>
-        <name>SK_ID</name>
-        <rename>SK_ID</rename>
+        <name>SK_ID_CALENDAR</name>
+        <rename>SK_ID_CALENDAR</rename>
         <type>Integer</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -685,8 +656,8 @@ var SK_ID = date2str(CALENDAR_DATE,'yyyyMMdd');</jsScript_script>
     <connection>datawarehouse-db-connection</connection>
     <fields>
       <field>
-        <column_name>SK_ID</column_name>
-        <stream_name>SK_ID</stream_name>
+        <column_name>sk_id_calendar</column_name>
+        <stream_name>SK_ID_CALENDAR</stream_name>
       </field>
       <field>
         <column_name>CALENDAR_DATE</column_name>
