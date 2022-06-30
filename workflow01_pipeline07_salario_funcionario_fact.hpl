@@ -20,45 +20,87 @@
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
+    <notepad>
+      <note>stage_folha_pagamento</note>
+      <xloc>96</xloc>
+      <yloc>112</yloc>
+      <width>158</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Obter calendar.SK_ID se 
+stage_folha_pagamento.dt_pagamento_salario = 
+calendar.calendar_date</note>
+      <xloc>272</xloc>
+      <yloc>80</yloc>
+      <width>311</width>
+      <heigth>58</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Formatar data de
+recebimento do salario</note>
+      <xloc>192</xloc>
+      <yloc>304</yloc>
+      <width>147</width>
+      <heigth>42</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
   </notepads>
   <order>
     <hop>
+      <from>Database lookup</from>
+      <to>Database lookup 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
       <from>Table input</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
       <to>Database lookup</to>
       <enabled>Y</enabled>
     </hop>
   </order>
-  <transform>
-    <name>Table input</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>stage-area-db-connection</connection>
-    <execute_each_row>N</execute_each_row>
-    <limit>0</limit>
-    <sql>SELECT
-  id
-, id_funcionario
-, id_divisao
-, id_cargo
-, id_departamento
-, dt_pagamento_salario
-, vl_salario
-FROM "public".stage_folha_pagamento
-</sql>
-    <variables_active>N</variables_active>
-    <attributes/>
-    <GUI>
-      <xloc>160</xloc>
-      <yloc>144</yloc>
-    </GUI>
-  </transform>
   <transform>
     <name>Database lookup</name>
     <type>DBLookup</type>
@@ -96,8 +138,129 @@ FROM "public".stage_folha_pagamento
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>336</xloc>
+      <xloc>384</xloc>
       <yloc>144</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>stage-area-db-connection</connection>
+    <execute_each_row>N</execute_each_row>
+    <limit>0</limit>
+    <sql>SELECT
+  id
+, id_funcionario
+, id_divisao
+, id_cargo
+, id_departamento
+, dt_pagamento_salario
+, vl_salario
+FROM "public".stage_folha_pagamento
+</sql>
+    <variables_active>N</variables_active>
+    <attributes/>
+    <GUI>
+      <xloc>160</xloc>
+      <yloc>144</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Database lookup 2</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <cache_size>0</cache_size>
+    <cache>N</cache>
+    <connection>datawarehouse-db-connection</connection>
+    <cache_load_all>N</cache_load_all>
+    <lookup>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <fail_on_multiple>N</fail_on_multiple>
+      <key>
+        <condition>=</condition>
+        <name>id_cargo</name>
+        <name2/>
+        <field>nk_id_cargo</field>
+      </key>
+      <key>
+        <condition>&lt;</condition>
+        <name>dt_pagamento_salario</name>
+        <name2/>
+        <field>etl_dt_inicio</field>
+      </key>
+      <key>
+        <condition>&gt;=</condition>
+        <name>dt_pagamento_salario</name>
+        <name2/>
+        <field>etl_dt_fim</field>
+      </key>
+      <orderby/>
+      <value>
+        <type>Integer</type>
+        <default/>
+        <rename/>
+        <name>sk_id_cargo</name>
+        <trim_type>none</trim_type>
+      </value>
+      <schema/>
+      <table>"public".dim_cargo</table>
+    </lookup>
+    <attributes/>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>240</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>dt_pagamento_salario</name>
+        <rename>dt_pagamento_salario</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd/MM/yyyy</conversion_mask>
+        <date_format_lenient>true</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>240</yloc>
     </GUI>
   </transform>
   <transform_error_handling>

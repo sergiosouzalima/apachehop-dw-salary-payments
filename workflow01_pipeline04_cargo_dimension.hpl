@@ -78,7 +78,7 @@
     <useBatch>N</useBatch>
     <attributes/>
     <GUI>
-      <xloc>592</xloc>
+      <xloc>384</xloc>
       <yloc>144</yloc>
     </GUI>
   </transform>
