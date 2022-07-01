@@ -43,7 +43,7 @@
     <notepad>
       <note>CALENDAR TABLE:
 Obter CALENDAR.SK_ID_CALENDAR</note>
-      <xloc>80</xloc>
+      <xloc>112</xloc>
       <yloc>336</yloc>
       <width>233</width>
       <heigth>42</heigth>
@@ -84,9 +84,92 @@ Obter DIM_CARGO.SK_ID_CARGO</note>
     </notepad>
     <notepad>
       <note>Gravar dados em FATO_SALARIO</note>
-      <xloc>592</xloc>
-      <yloc>96</yloc>
+      <xloc>1056</xloc>
+      <yloc>336</yloc>
       <width>207</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>DIM_FUNCIONARIO TABLE:
+Obter DIM_FUNCIONARIO.SK_ID_FUNCIONARIO</note>
+      <xloc>368</xloc>
+      <yloc>336</yloc>
+      <width>305</width>
+      <heigth>42</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>DIM_DEPARTAMENTO TABLE:
+Obter DIM_DEPARTAMENTO.SK_ID_DEPARTAMENTO</note>
+      <xloc>544</xloc>
+      <yloc>80</yloc>
+      <width>337</width>
+      <heigth>42</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>DIM_DEPARTAMENTO TABLE:
+Obter DIM_DEPARTAMENTO.SK_ID_DEPARTAMENTO</note>
+      <xloc>688</xloc>
+      <yloc>336</yloc>
+      <width>337</width>
+      <heigth>42</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Atribuir -1 a coluna SK_ID* caso seja nula.</note>
+      <xloc>896</xloc>
+      <yloc>96</yloc>
+      <width>259</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -115,13 +198,28 @@ Obter DIM_CARGO.SK_ID_CARGO</note>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Database lookup 2</from>
-      <to>If Null</to>
+      <from>If Null</from>
+      <to>Table output</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>If Null</from>
-      <to>Table output</to>
+      <from>Database lookup 2</from>
+      <to>Database lookup 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Database lookup 3</from>
+      <to>Database lookup 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Database lookup 4</from>
+      <to>Database lookup 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Database lookup 5</from>
+      <to>If Null</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -146,23 +244,18 @@ Obter DIM_CARGO.SK_ID_CARGO</note>
       <key>
         <condition>=</condition>
         <name>dt_pagamento_salario</name>
-        <name2/>
         <field>calendar_date</field>
       </key>
-      <orderby/>
       <value>
         <type>Integer</type>
-        <default/>
-        <rename/>
         <name>sk_id_calendar</name>
         <trim_type>none</trim_type>
       </value>
-      <schema/>
       <table>"public".calendar</table>
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>176</xloc>
+      <xloc>224</xloc>
       <yloc>272</yloc>
     </GUI>
   </transform>
@@ -187,66 +280,28 @@ Obter DIM_CARGO.SK_ID_CARGO</note>
       <key>
         <condition>=</condition>
         <name>id_cargo</name>
-        <name2/>
         <field>nk_id_cargo</field>
       </key>
       <key>
         <condition>&lt;</condition>
         <name>dt_pagamento_salario</name>
-        <name2/>
         <field>etl_dt_inicio</field>
       </key>
       <key>
         <condition>&gt;=</condition>
         <name>dt_pagamento_salario</name>
-        <name2/>
         <field>etl_dt_fim</field>
       </key>
-      <orderby/>
       <value>
         <type>Integer</type>
-        <default/>
-        <rename/>
         <name>sk_id_cargo</name>
         <trim_type>none</trim_type>
       </value>
-      <schema/>
       <table>"public".dim_cargo</table>
     </lookup>
     <attributes/>
     <GUI>
       <xloc>384</xloc>
-      <yloc>128</yloc>
-    </GUI>
-  </transform>
-  <transform>
-    <name>Table input</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>stage-area-db-connection</connection>
-    <execute_each_row>N</execute_each_row>
-    <limit>0</limit>
-    <sql>SELECT
-  id
-, id_funcionario
-, id_divisao
-, id_cargo
-, id_departamento
-, dt_pagamento_salario
-, vl_salario
-FROM "public".stage_folha_pagamento
-</sql>
-    <variables_active>N</variables_active>
-    <attributes/>
-    <GUI>
-      <xloc>128</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -281,11 +336,60 @@ FROM "public".stage_folha_pagamento
         <mask/>
         <set_empty_string>N</set_empty_string>
       </field>
+      <field>
+        <name>sk_id_funcionario</name>
+        <value/>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>sk_id_divisao</name>
+        <value/>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>sk_id_departamento</name>
+        <value/>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
     </fields>
     <attributes/>
     <GUI>
-      <xloc>544</xloc>
-      <yloc>272</yloc>
+      <xloc>1008</xloc>
+      <yloc>144</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>stage-area-db-connection</connection>
+    <execute_each_row>N</execute_each_row>
+    <limit>0</limit>
+    <sql>SELECT
+  id
+, id_funcionario
+, id_divisao
+, id_cargo
+, id_departamento
+, dt_pagamento_salario
+, vl_salario
+FROM "public".stage_folha_pagamento
+</sql>
+    <variables_active>N</variables_active>
+    <attributes/>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>128</yloc>
     </GUI>
   </transform>
   <transform>
@@ -310,6 +414,26 @@ FROM "public".stage_folha_pagamento
         <column_name>sk_id_cargo</column_name>
         <stream_name>id_cargo</stream_name>
       </field>
+      <field>
+        <column_name>sk_id_funcionario</column_name>
+        <stream_name>id_funcionario</stream_name>
+      </field>
+      <field>
+        <column_name>sk_id_divisao</column_name>
+        <stream_name>id_divisao</stream_name>
+      </field>
+      <field>
+        <column_name>dt_pagamento_salario</column_name>
+        <stream_name>dt_pagamento_salario</stream_name>
+      </field>
+      <field>
+        <column_name>sk_id_departamento</column_name>
+        <stream_name>id_departamento</stream_name>
+      </field>
+      <field>
+        <column_name>vl_funcionario_salario</column_name>
+        <stream_name>vl_salario</stream_name>
+      </field>
     </fields>
     <return_field/>
     <ignore_errors>N</ignore_errors>
@@ -328,8 +452,167 @@ FROM "public".stage_folha_pagamento
     <use_batch>Y</use_batch>
     <attributes/>
     <GUI>
+      <xloc>1136</xloc>
+      <yloc>272</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Database lookup 3</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <cache_size>0</cache_size>
+    <cache>N</cache>
+    <connection>datawarehouse-db-connection</connection>
+    <cache_load_all>N</cache_load_all>
+    <lookup>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <fail_on_multiple>N</fail_on_multiple>
+      <key>
+        <condition>=</condition>
+        <name>id_funcionario</name>
+        <name2/>
+        <field>nk_id_funcionario</field>
+      </key>
+      <key>
+        <condition>&lt;</condition>
+        <name>dt_pagamento_salario</name>
+        <name2/>
+        <field>etl_dt_inicio</field>
+      </key>
+      <key>
+        <condition>&gt;=</condition>
+        <name>dt_pagamento_salario</name>
+        <name2/>
+        <field>etl_dt_fim</field>
+      </key>
+      <orderby/>
+      <value>
+        <type>Integer</type>
+        <default/>
+        <rename/>
+        <name>sk_id_funcionario</name>
+        <trim_type>none</trim_type>
+      </value>
+      <schema/>
+      <table>"public".dim_funcionario</table>
+    </lookup>
+    <attributes/>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>272</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Database lookup 4</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <cache_size>0</cache_size>
+    <cache>N</cache>
+    <connection>datawarehouse-db-connection</connection>
+    <cache_load_all>N</cache_load_all>
+    <lookup>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <fail_on_multiple>N</fail_on_multiple>
+      <key>
+        <condition>=</condition>
+        <name>id_departamento</name>
+        <name2/>
+        <field>nk_id_departamento</field>
+      </key>
+      <key>
+        <condition>&lt;</condition>
+        <name>dt_pagamento_salario</name>
+        <name2/>
+        <field>etl_dt_inicio</field>
+      </key>
+      <key>
+        <condition>&gt;=</condition>
+        <name>dt_pagamento_salario</name>
+        <name2/>
+        <field>etl_dt_fim</field>
+      </key>
+      <orderby/>
+      <value>
+        <type>Integer</type>
+        <default/>
+        <rename/>
+        <name>sk_id_departamento</name>
+        <trim_type>none</trim_type>
+      </value>
+      <schema/>
+      <table>"public".dim_departamento</table>
+    </lookup>
+    <attributes/>
+    <GUI>
       <xloc>672</xloc>
       <yloc>128</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Database lookup 5</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <cache_size>0</cache_size>
+    <cache>N</cache>
+    <connection>datawarehouse-db-connection</connection>
+    <cache_load_all>N</cache_load_all>
+    <lookup>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <fail_on_multiple>N</fail_on_multiple>
+      <key>
+        <condition>=</condition>
+        <name>id_divisao</name>
+        <name2/>
+        <field>nk_id_divisao</field>
+      </key>
+      <key>
+        <condition>&lt;</condition>
+        <name>dt_pagamento_salario</name>
+        <name2/>
+        <field>etl_dt_inicio</field>
+      </key>
+      <key>
+        <condition>&gt;=</condition>
+        <name>dt_pagamento_salario</name>
+        <name2/>
+        <field>etl_dt_fim</field>
+      </key>
+      <orderby/>
+      <value>
+        <type>Integer</type>
+        <default/>
+        <rename/>
+        <name>sk_id_divisao</name>
+        <trim_type>none</trim_type>
+      </value>
+      <schema/>
+      <table>"public".dim_divisao</table>
+    </lookup>
+    <attributes/>
+    <GUI>
+      <xloc>832</xloc>
+      <yloc>272</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
