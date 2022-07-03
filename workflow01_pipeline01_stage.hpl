@@ -22,7 +22,7 @@
   <notepads>
     <notepad>
       <note>SOURCE DATA</note>
-      <xloc>112</xloc>
+      <xloc>64</xloc>
       <yloc>32</yloc>
       <width>102</width>
       <heigth>26</heigth>
@@ -83,7 +83,7 @@
     <notepad>
       <note>STAGE_CARGO TABLE</note>
       <xloc>432</xloc>
-      <yloc>208</yloc>
+      <yloc>304</yloc>
       <width>145</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
@@ -103,7 +103,7 @@
     <notepad>
       <note>STAGE_DIVISAO TABLE</note>
       <xloc>432</xloc>
-      <yloc>336</yloc>
+      <yloc>496</yloc>
       <width>153</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
@@ -141,10 +141,10 @@
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>STAGE_DIVISAO TABLE</note>
+      <note>STAGE_FUNCIONARIO TABLE</note>
       <xloc>1072</xloc>
       <yloc>96</yloc>
-      <width>153</width>
+      <width>189</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -182,8 +182,8 @@
     </notepad>
     <notepad>
       <note>STAGE_FOLHA_PAGAMENTO TABLE</note>
-      <xloc>1040</xloc>
-      <yloc>208</yloc>
+      <xloc>1056</xloc>
+      <yloc>304</yloc>
       <width>230</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
@@ -201,12 +201,101 @@
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>Formatar data de
-recebimento do salario</note>
-      <xloc>768</xloc>
-      <yloc>384</yloc>
-      <width>147</width>
-      <heigth>42</heigth>
+      <note>Transforma descricao para 
+maiscula, e retira espacos 
+no comeco e fim.</note>
+      <xloc>208</xloc>
+      <yloc>64</yloc>
+      <width>171</width>
+      <heigth>58</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Transforma descricao para 
+maiscula, e retira espacos 
+no comeco e fim.</note>
+      <xloc>224</xloc>
+      <yloc>272</yloc>
+      <width>171</width>
+      <heigth>58</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Transforma descricao para 
+maiscula, e retira espacos 
+no comeco e fim.</note>
+      <xloc>224</xloc>
+      <yloc>464</yloc>
+      <width>171</width>
+      <heigth>58</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Transforma descricao para 
+maiscula, e retira espacos 
+no comeco e fim.</note>
+      <xloc>848</xloc>
+      <yloc>64</yloc>
+      <width>171</width>
+      <heigth>58</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Gerar codigo ID como chave 
+primaria para tabela 
+STAGE_FOLHA_PAGAMENTO</note>
+      <xloc>848</xloc>
+      <yloc>272</yloc>
+      <width>187</width>
+      <heigth>58</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
       <fontbold>N</fontbold>
@@ -300,7 +389,7 @@ recebimento do salario</note>
     <attributes/>
     <GUI>
       <xloc>912</xloc>
-      <yloc>240</yloc>
+      <yloc>336</yloc>
     </GUI>
   </transform>
   <transform>
@@ -353,7 +442,7 @@ recebimento do salario</note>
     </fields>
     <attributes/>
     <GUI>
-      <xloc>144</xloc>
+      <xloc>96</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -407,8 +496,8 @@ recebimento do salario</note>
     </fields>
     <attributes/>
     <GUI>
-      <xloc>144</xloc>
-      <yloc>240</yloc>
+      <xloc>96</xloc>
+      <yloc>336</yloc>
     </GUI>
   </transform>
   <transform>
@@ -461,8 +550,8 @@ recebimento do salario</note>
     </fields>
     <attributes/>
     <GUI>
-      <xloc>144</xloc>
-      <yloc>368</yloc>
+      <xloc>96</xloc>
+      <yloc>528</yloc>
     </GUI>
   </transform>
   <transform>
@@ -602,7 +691,7 @@ recebimento do salario</note>
       <field>
         <name>Data</name>
         <type>Date</type>
-        <format>dd/MM/yyyy</format>
+        <format>dd/MM/yy</format>
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
@@ -625,7 +714,44 @@ recebimento do salario</note>
     <attributes/>
     <GUI>
       <xloc>736</xloc>
-      <yloc>240</yloc>
+      <yloc>336</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>Data</name>
+        <rename>Data</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd/MM/yyyy</conversion_mask>
+        <date_format_lenient>true</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>832</xloc>
+      <yloc>416</yloc>
     </GUI>
   </transform>
   <transform>
@@ -656,7 +782,7 @@ recebimento do salario</note>
     </fields>
     <attributes/>
     <GUI>
-      <xloc>320</xloc>
+      <xloc>288</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -688,8 +814,8 @@ recebimento do salario</note>
     </fields>
     <attributes/>
     <GUI>
-      <xloc>320</xloc>
-      <yloc>240</yloc>
+      <xloc>288</xloc>
+      <yloc>336</yloc>
     </GUI>
   </transform>
   <transform>
@@ -720,8 +846,8 @@ recebimento do salario</note>
     </fields>
     <attributes/>
     <GUI>
-      <xloc>320</xloc>
-      <yloc>368</yloc>
+      <xloc>288</xloc>
+      <yloc>528</yloc>
     </GUI>
   </transform>
   <transform>
@@ -846,7 +972,7 @@ recebimento do salario</note>
     <attributes/>
     <GUI>
       <xloc>496</xloc>
-      <yloc>240</yloc>
+      <yloc>336</yloc>
     </GUI>
   </transform>
   <transform>
@@ -886,7 +1012,7 @@ recebimento do salario</note>
     <attributes/>
     <GUI>
       <xloc>496</xloc>
-      <yloc>368</yloc>
+      <yloc>528</yloc>
     </GUI>
   </transform>
   <transform>
@@ -990,44 +1116,7 @@ recebimento do salario</note>
     <attributes/>
     <GUI>
       <xloc>1136</xloc>
-      <yloc>240</yloc>
-    </GUI>
-  </transform>
-  <transform>
-    <name>Select values</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <select_unspecified>N</select_unspecified>
-      <meta>
-        <name>Data</name>
-        <rename>Data</rename>
-        <type>Date</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>dd/MM/yyyy</conversion_mask>
-        <date_format_lenient>true</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-    </fields>
-    <attributes/>
-    <GUI>
-      <xloc>832</xloc>
-      <yloc>320</yloc>
+      <yloc>336</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
