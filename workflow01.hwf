@@ -87,11 +87,11 @@
       <attributes_hac/>
     </action>
     <action>
-      <name>workflow01_pipeline03_divisao_dimension.hpl</name>
+      <name>workflow01_pipeline03_setor_dimension.hpl</name>
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>/home/sergio/workspace/github/sergiosouzalima/apachehop-dw-salary-payments/workflow01_pipeline03_divisao_dimension.hpl</filename>
+      <filename>/home/sergio/workspace/github/sergiosouzalima/apachehop-dw-salary-payments/workflow01_pipeline03_setor_dimension.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -199,11 +199,11 @@
       <attributes_hac/>
     </action>
     <action>
-      <name>workflow01_pipeline07_salario_funcionario_fact.hpl</name>
+      <name>workflow01_pipeline07_folha_pagamento_fact.hpl</name>
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>/home/sergio/workspace/github/sergiosouzalima/apachehop-dw-salary-payments/workflow01_pipeline07_salario_funcionario_fact.hpl</filename>
+      <filename>/home/sergio/workspace/github/sergiosouzalima/apachehop-dw-salary-payments/workflow01_pipeline07_folha_pagamento_fact.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -254,13 +254,13 @@
     </hop>
     <hop>
       <from>workflow01_pipeline02_calendar_dimension.hpl</from>
-      <to>workflow01_pipeline03_divisao_dimension.hpl</to>
+      <to>workflow01_pipeline03_setor_dimension.hpl</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>workflow01_pipeline03_divisao_dimension.hpl</from>
+      <from>workflow01_pipeline03_setor_dimension.hpl</from>
       <to>workflow01_pipeline04_cargo_dimension.hpl</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
@@ -282,17 +282,17 @@
     </hop>
     <hop>
       <from>workflow01_pipeline06_funcionario_dimension.hpl</from>
-      <to>workflow01_pipeline07_salario_funcionario_fact.hpl</to>
+      <to>workflow01_pipeline07_folha_pagamento_fact.hpl</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>workflow01_pipeline07_salario_funcionario_fact.hpl</from>
+      <from>workflow01_pipeline07_folha_pagamento_fact.hpl</from>
       <to>Success</to>
       <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
     </hop>
   </hops>
   <notepads>
