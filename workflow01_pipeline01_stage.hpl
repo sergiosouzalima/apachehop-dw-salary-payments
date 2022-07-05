@@ -604,12 +604,12 @@ STAGE_FOLHA_PAGAMENTO</note>
       <field>
         <name>Salário</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format>#.##</format>
         <currency>$</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>15</length>
-        <precision>1</precision>
+        <length>18</length>
+        <precision>2</precision>
         <trim_type>none</trim_type>
       </field>
     </fields>
@@ -1018,17 +1018,13 @@ STAGE_FOLHA_PAGAMENTO</note>
         <stream_name>Divisao</stream_name>
       </field>
     </fields>
-    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
-    <schema/>
     <specify_fields>Y</specify_fields>
     <table>"public".stage_folha_pagamento</table>
-    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>

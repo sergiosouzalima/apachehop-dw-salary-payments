@@ -26,8 +26,8 @@
       <weekDay>1</weekDay>
       <DayOfMonth>1</DayOfMonth>
       <parallel>N</parallel>
-      <xloc>50</xloc>
-      <yloc>50</yloc>
+      <xloc>32</xloc>
+      <yloc>48</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -54,7 +54,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>224</xloc>
+      <xloc>192</xloc>
       <yloc>48</yloc>
       <attributes_hac/>
     </action>
@@ -82,7 +82,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>224</xloc>
+      <xloc>272</xloc>
       <yloc>160</yloc>
       <attributes_hac/>
     </action>
