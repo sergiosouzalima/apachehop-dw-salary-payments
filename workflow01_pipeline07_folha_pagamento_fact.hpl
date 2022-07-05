@@ -63,11 +63,6 @@
   </notepads>
   <order>
     <hop>
-      <from>Database lookup</from>
-      <to>Database lookup 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Database lookup 2</from>
       <to>Database lookup 3</to>
       <enabled>Y</enabled>
@@ -99,56 +94,10 @@
     </hop>
     <hop>
       <from>Database lookup 6</from>
-      <to>Database lookup</to>
+      <to>Database lookup 2</to>
       <enabled>Y</enabled>
     </hop>
   </order>
-  <transform>
-    <name>Database lookup</name>
-    <type>DBLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <cache_size>0</cache_size>
-    <cache>N</cache>
-    <connection>datawarehouse-db-connection</connection>
-    <cache_load_all>N</cache_load_all>
-    <lookup>
-      <eat_row_on_failure>N</eat_row_on_failure>
-      <fail_on_multiple>N</fail_on_multiple>
-      <key>
-        <condition>=</condition>
-        <name>id_setor</name>
-        <field>nk_id_setor</field>
-      </key>
-      <key>
-        <condition>&lt;</condition>
-        <name>dt_pagamento_salario</name>
-        <field>etl_dt_inicio</field>
-      </key>
-      <key>
-        <condition>&gt;=</condition>
-        <name>dt_pagamento_salario</name>
-        <field>etl_dt_fim</field>
-      </key>
-      <value>
-        <type>Integer</type>
-        <name>sk_id_setor</name>
-        <trim_type>none</trim_type>
-      </value>
-      <table>"public".dim_setor</table>
-    </lookup>
-    <attributes/>
-    <GUI>
-      <xloc>256</xloc>
-      <yloc>272</yloc>
-    </GUI>
-  </transform>
   <transform>
     <name>Database lookup 2</name>
     <type>DBLookup</type>
@@ -324,6 +273,52 @@
     </GUI>
   </transform>
   <transform>
+    <name>Database lookup 6</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <cache_size>0</cache_size>
+    <cache>N</cache>
+    <connection>datawarehouse-db-connection</connection>
+    <cache_load_all>N</cache_load_all>
+    <lookup>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <fail_on_multiple>N</fail_on_multiple>
+      <key>
+        <condition>=</condition>
+        <name>id_divisao</name>
+        <field>nk_id_divisao</field>
+      </key>
+      <key>
+        <condition>&lt;</condition>
+        <name>dt_pagamento_salario</name>
+        <field>etl_dt_inicio</field>
+      </key>
+      <key>
+        <condition>&gt;=</condition>
+        <name>dt_pagamento_salario</name>
+        <field>etl_dt_fim</field>
+      </key>
+      <value>
+        <type>Integer</type>
+        <name>sk_id_divisao</name>
+        <trim_type>none</trim_type>
+      </value>
+      <table>"public".dim_divisao</table>
+    </lookup>
+    <attributes/>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>272</yloc>
+    </GUI>
+  </transform>
+  <transform>
     <name>If Null</name>
     <type>IfNull</type>
     <description/>
@@ -362,12 +357,6 @@
       </field>
       <field>
         <name>sk_id_funcionario</name>
-        <value>-1</value>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>sk_id_setor</name>
         <value>-1</value>
         <mask/>
         <set_empty_string>N</set_empty_string>
@@ -441,10 +430,6 @@ FROM "public".stage_folha_pagamento
         <stream_name>dt_pagamento_salario</stream_name>
       </field>
       <field>
-        <column_name>sk_id_setor</column_name>
-        <stream_name>sk_id_setor</stream_name>
-      </field>
-      <field>
         <column_name>sk_id_cargo</column_name>
         <stream_name>sk_id_cargo</stream_name>
       </field>
@@ -488,59 +473,6 @@ FROM "public".stage_folha_pagamento
     <GUI>
       <xloc>992</xloc>
       <yloc>272</yloc>
-    </GUI>
-  </transform>
-  <transform>
-    <name>Database lookup 6</name>
-    <type>DBLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <cache_size>0</cache_size>
-    <cache>N</cache>
-    <connection>datawarehouse-db-connection</connection>
-    <cache_load_all>N</cache_load_all>
-    <lookup>
-      <eat_row_on_failure>N</eat_row_on_failure>
-      <fail_on_multiple>N</fail_on_multiple>
-      <key>
-        <condition>=</condition>
-        <name>id_divisao</name>
-        <name2/>
-        <field>nk_id_divisao</field>
-      </key>
-      <key>
-        <condition>&lt;</condition>
-        <name>dt_pagamento_salario</name>
-        <name2/>
-        <field>etl_dt_inicio</field>
-      </key>
-      <key>
-        <condition>&gt;=</condition>
-        <name>dt_pagamento_salario</name>
-        <name2/>
-        <field>etl_dt_fim</field>
-      </key>
-      <orderby/>
-      <value>
-        <type>Integer</type>
-        <default/>
-        <rename/>
-        <name>sk_id_divisao</name>
-        <trim_type>none</trim_type>
-      </value>
-      <schema/>
-      <table>"public".dim_divisao</table>
-    </lookup>
-    <attributes/>
-    <GUI>
-      <xloc>144</xloc>
-      <yloc>384</yloc>
     </GUI>
   </transform>
   <transform_error_handling>

@@ -77,79 +77,6 @@ VALUES(
     '2199-12-31' -- ETL_DT_FIM
 );
 
--- DIM_SETOR -----------------------------------------------------
-
-DROP TABLE IF EXISTS public.DIM_SETOR;
-
-CREATE TABLE public.DIM_SETOR(
-    SK_ID_SETOR INTEGER NOT NULL,
-    NK_ID_SETOR INTEGER,
-    DS_SETOR VARCHAR(100),
-    DIM_DS_OBSERVACAO VARCHAR(120),
-    ETL_NR_VERSION INTEGER,
-    ETL_DT_INICIO DATE,
-    ETL_DT_FIM DATE,
-    TS_ETL_CARGA TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT DIM_SETOR_PK PRIMARY KEY(SK_ID_SETOR)
-);
-
-INSERT INTO public.DIM_SETOR(
-	SK_ID_SETOR, 
-	NK_ID_SETOR, 
-	DS_SETOR, 
-	DIM_DS_OBSERVACAO, 
-	ETL_NR_VERSION, 
-	ETL_DT_INICIO, 
-	ETL_DT_FIM
-)
-VALUES(
-    0, -- SK_ID_SETOR -- registro default do Apache HOP
-    0, -- NK_ID_SETOR
-    '** NAO ENCONTRADO **', -- DS_SETOR  
-    'NAO ENCONTRADO = Quando a tabela fato não acha a SK na tabela dimensão.', -- DIM_DS_OBSERVACAO
-    0, -- ETL_NR_VERSION
-    '1900-01-01', -- ETL_DT_INICIO 
-    '2199-12-31' -- ETL_DT_FIM
-);
-
-INSERT INTO public.DIM_SETOR(
-	SK_ID_SETOR, 
-	NK_ID_SETOR, 
-	DS_SETOR, 
-	DIM_DS_OBSERVACAO, 
-	ETL_NR_VERSION, 
-	ETL_DT_INICIO, 
-	ETL_DT_FIM
-)
-VALUES(
-    -1, -- SK_ID_SETOR
-     0, -- NK_ID_SETOR
-    '** NAO ENCONTRADO **', -- DS_SETOR  
-    'NAO ENCONTRADO = Quando a tabela fato não acha a SK na tabela dimensão.', -- DIM_DS_OBSERVACAO
-     0, -- ETL_NR_VERSION
-    '1900-01-01', -- ETL_DT_INICIO 
-    '2199-12-31' -- ETL_DT_FIM
-);
-
-INSERT INTO public.DIM_SETOR(
-	SK_ID_SETOR, 
-	NK_ID_SETOR, 
-	DS_SETOR, 
-	DIM_DS_OBSERVACAO, 
-	ETL_NR_VERSION, 
-	ETL_DT_INICIO, 
-	ETL_DT_FIM
-)
-VALUES(
-    -2, -- SK_ID_SETOR
-     0, -- NK_ID_SETOR
-    '** NAO SE APLICA **', -- DS_SETOR  
-    'NAO SE APLICA = Quando o cruzamento entre tabela fato e tabela dimensão nao existe ou nao faz sentido.', -- DIM_DS_OBSERVACAO
-     0, -- ETL_NR_VERSION
-    '1900-01-01', -- ETL_DT_INICIO 
-    '2199-12-31' -- ETL_DT_FIM
-);
-
 -- DIM_CARGO -----------------------------------------------------
     
 DROP TABLE IF EXISTS public.DIM_CARGO;
@@ -401,7 +328,6 @@ CREATE TABLE public.FATO_FOLHA_PAGAMENTO(
   SK_ID_FUNCIONARIO INTEGER,
   SK_ID_DEPARTAMENTO INTEGER,
   SK_ID_CARGO INTEGER,
-  SK_ID_SETOR INTEGER,
   SK_ID_DIVISAO INTEGER,
   DT_PAGAMENTO_SALARIO DATE,
   VL_FUNCIONARIO_SALARIO NUMERIC(18,2), 

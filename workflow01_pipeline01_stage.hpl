@@ -247,73 +247,9 @@ STAGE_FOLHA_PAGAMENTO</note>
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>Transforma descricao para 
-maiscula, e retira espacos 
-no comeco e fim.</note>
-      <xloc>224</xloc>
-      <yloc>400</yloc>
-      <width>171</width>
-      <heigth>58</heigth>
-      <fontname>Ubuntu</fontname>
-      <fontsize>10</fontsize>
-      <fontbold>N</fontbold>
-      <fontitalic>N</fontitalic>
-      <fontcolorred>14</fontcolorred>
-      <fontcolorgreen>58</fontcolorgreen>
-      <fontcolorblue>90</fontcolorblue>
-      <backgroundcolorred>201</backgroundcolorred>
-      <backgroundcolorgreen>232</backgroundcolorgreen>
-      <backgroundcolorblue>251</backgroundcolorblue>
-      <bordercolorred>14</bordercolorred>
-      <bordercolorgreen>58</bordercolorgreen>
-      <bordercolorblue>90</bordercolorblue>
-    </notepad>
-    <notepad>
-      <note>STAGE_SETOR TABLE</note>
-      <xloc>432</xloc>
-      <yloc>432</yloc>
-      <width>140</width>
-      <heigth>26</heigth>
-      <fontname>Ubuntu</fontname>
-      <fontsize>10</fontsize>
-      <fontbold>N</fontbold>
-      <fontitalic>N</fontitalic>
-      <fontcolorred>14</fontcolorred>
-      <fontcolorgreen>58</fontcolorgreen>
-      <fontcolorblue>90</fontcolorblue>
-      <backgroundcolorred>201</backgroundcolorred>
-      <backgroundcolorgreen>232</backgroundcolorgreen>
-      <backgroundcolorblue>251</backgroundcolorblue>
-      <bordercolorred>14</bordercolorred>
-      <bordercolorgreen>58</bordercolorgreen>
-      <bordercolorblue>90</bordercolorblue>
-    </notepad>
-    <notepad>
-      <note>Transforma descricao para 
-maiscula, e retira espacos 
-no comeco e fim.</note>
-      <xloc>800</xloc>
-      <yloc>464</yloc>
-      <width>171</width>
-      <heigth>58</heigth>
-      <fontname>Ubuntu</fontname>
-      <fontsize>10</fontsize>
-      <fontbold>N</fontbold>
-      <fontitalic>N</fontitalic>
-      <fontcolorred>14</fontcolorred>
-      <fontcolorgreen>58</fontcolorgreen>
-      <fontcolorblue>90</fontcolorblue>
-      <backgroundcolorred>201</backgroundcolorred>
-      <backgroundcolorgreen>232</backgroundcolorgreen>
-      <backgroundcolorblue>251</backgroundcolorblue>
-      <bordercolorred>14</bordercolorred>
-      <bordercolorgreen>58</bordercolorgreen>
-      <bordercolorblue>90</bordercolorblue>
-    </notepad>
-    <notepad>
       <note>STAGE_DIVISAO TABLE</note>
-      <xloc>1008</xloc>
-      <yloc>496</yloc>
+      <xloc>432</xloc>
+      <yloc>384</yloc>
       <width>153</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
@@ -375,16 +311,6 @@ no comeco e fim.</note>
     <hop>
       <from>Select values</from>
       <to>Add sequence</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>CSV file input 3</from>
-      <to>String operations 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>String operations 3</from>
-      <to>Table output 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -531,60 +457,6 @@ no comeco e fim.</note>
     </GUI>
   </transform>
   <transform>
-    <name>CSV file input 3</name>
-    <type>CSVInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <filename>/home/sergio/workspace/github/sergiosouzalima/apachehop-dw-salary-payments/datasets/Setor.csv</filename>
-    <filename_field/>
-    <rownum_field/>
-    <include_filename>N</include_filename>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <header>Y</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
-    <add_filename_result>N</add_filename_result>
-    <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
-    <encoding>ISO-8859-1</encoding>
-    <fields>
-      <field>
-        <name>Codigo</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Setor</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>17</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-    </fields>
-    <attributes/>
-    <GUI>
-      <xloc>96</xloc>
-      <yloc>464</yloc>
-    </GUI>
-  </transform>
-  <transform>
     <name>CSV file input 4</name>
     <type>CSVInput</type>
     <description/>
@@ -708,17 +580,6 @@ no comeco e fim.</note>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>Setor</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
         <name>Divisao</name>
         <type>Integer</type>
         <format>#</format>
@@ -756,6 +617,60 @@ no comeco e fim.</note>
     <GUI>
       <xloc>736</xloc>
       <yloc>288</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>CSV file input 6</name>
+    <type>CSVInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <filename>/home/sergio/workspace/github/sergiosouzalima/apachehop-dw-salary-payments/datasets/Divisao.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding>ISO-8859-1</encoding>
+    <fields>
+      <field>
+        <name>Codigo</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Divisao</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>416</yloc>
     </GUI>
   </transform>
   <transform>
@@ -860,38 +775,6 @@ no comeco e fim.</note>
     </GUI>
   </transform>
   <transform>
-    <name>String operations 3</name>
-    <type>StringOperations</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <in_stream_name>Setor</in_stream_name>
-        <out_stream_name/>
-        <trim_type>both</trim_type>
-        <lower_upper>upper</lower_upper>
-        <padding_type>none</padding_type>
-        <pad_char/>
-        <pad_len/>
-        <init_cap>no</init_cap>
-        <mask_xml>none</mask_xml>
-        <digits>none</digits>
-        <remove_special_characters>crlf</remove_special_characters>
-      </field>
-    </fields>
-    <attributes/>
-    <GUI>
-      <xloc>288</xloc>
-      <yloc>464</yloc>
-    </GUI>
-  </transform>
-  <transform>
     <name>String operations 4</name>
     <type>StringOperations</type>
     <description/>
@@ -934,6 +817,38 @@ no comeco e fim.</note>
     <GUI>
       <xloc>912</xloc>
       <yloc>128</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>String operations 6</name>
+    <type>StringOperations</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>Divisao</in_stream_name>
+        <out_stream_name/>
+        <trim_type>both</trim_type>
+        <lower_upper>upper</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char/>
+        <pad_len/>
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>crlf</remove_special_characters>
+      </field>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>416</yloc>
     </GUI>
   </transform>
   <transform>
@@ -1017,46 +932,6 @@ no comeco e fim.</note>
     </GUI>
   </transform>
   <transform>
-    <name>Table output 3</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <commit>1000</commit>
-    <connection>stage-area-db-connection</connection>
-    <fields>
-      <field>
-        <column_name>id</column_name>
-        <stream_name>Codigo</stream_name>
-      </field>
-      <field>
-        <column_name>description</column_name>
-        <stream_name>Setor</stream_name>
-      </field>
-    </fields>
-    <ignore_errors>N</ignore_errors>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <return_keys>N</return_keys>
-    <specify_fields>Y</specify_fields>
-    <table>STAGE_SETOR</table>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_in_table>Y</tablename_in_table>
-    <truncate>Y</truncate>
-    <use_batch>Y</use_batch>
-    <attributes/>
-    <GUI>
-      <xloc>480</xloc>
-      <yloc>464</yloc>
-    </GUI>
-  </transform>
-  <transform>
     <name>Table output 4</name>
     <type>TableOutput</type>
     <description/>
@@ -1127,10 +1002,6 @@ no comeco e fim.</note>
         <stream_name>Departamento</stream_name>
       </field>
       <field>
-        <column_name>id_setor</column_name>
-        <stream_name>Setor</stream_name>
-      </field>
-      <field>
         <column_name>DT_PAGAMENTO_SALARIO</column_name>
         <stream_name>Data</stream_name>
       </field>
@@ -1169,92 +1040,6 @@ no comeco e fim.</note>
     </GUI>
   </transform>
   <transform>
-    <name>CSV file input 6</name>
-    <type>CSVInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <filename>/home/sergio/workspace/github/sergiosouzalima/apachehop-dw-salary-payments/datasets/Divisao.csv</filename>
-    <filename_field/>
-    <rownum_field/>
-    <include_filename>N</include_filename>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <header>Y</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
-    <add_filename_result>N</add_filename_result>
-    <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
-    <encoding>ISO-8859-1</encoding>
-    <fields>
-      <field>
-        <name>Codigo</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>Divisao</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>11</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-    </fields>
-    <attributes/>
-    <GUI>
-      <xloc>672</xloc>
-      <yloc>528</yloc>
-    </GUI>
-  </transform>
-  <transform>
-    <name>String operations 6</name>
-    <type>StringOperations</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <in_stream_name>Divisao</in_stream_name>
-        <out_stream_name/>
-        <trim_type>both</trim_type>
-        <lower_upper>upper</lower_upper>
-        <padding_type>none</padding_type>
-        <pad_char/>
-        <pad_len/>
-        <init_cap>no</init_cap>
-        <mask_xml>none</mask_xml>
-        <digits>none</digits>
-        <remove_special_characters>crlf</remove_special_characters>
-      </field>
-    </fields>
-    <attributes/>
-    <GUI>
-      <xloc>864</xloc>
-      <yloc>528</yloc>
-    </GUI>
-  </transform>
-  <transform>
     <name>Table output 6</name>
     <type>TableOutput</type>
     <description/>
@@ -1277,25 +1062,21 @@ no comeco e fim.</note>
         <stream_name>Divisao</stream_name>
       </field>
     </fields>
-    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
-    <schema/>
     <specify_fields>Y</specify_fields>
     <table>"public".stage_divisao</table>
-    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
     <use_batch>Y</use_batch>
     <attributes/>
     <GUI>
-      <xloc>1056</xloc>
-      <yloc>528</yloc>
+      <xloc>480</xloc>
+      <yloc>416</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
