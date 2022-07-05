@@ -82,8 +82,8 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>224</xloc>
-      <yloc>160</yloc>
+      <xloc>176</xloc>
+      <yloc>304</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -110,7 +110,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>544</xloc>
+      <xloc>592</xloc>
       <yloc>48</yloc>
       <attributes_hac/>
     </action>
@@ -138,7 +138,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>544</xloc>
+      <xloc>592</xloc>
       <yloc>160</yloc>
       <attributes_hac/>
     </action>
@@ -166,7 +166,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>864</xloc>
+      <xloc>912</xloc>
       <yloc>48</yloc>
       <attributes_hac/>
     </action>
@@ -194,7 +194,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>864</xloc>
+      <xloc>912</xloc>
       <yloc>160</yloc>
       <attributes_hac/>
     </action>
@@ -222,7 +222,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>1200</xloc>
+      <xloc>1248</xloc>
       <yloc>48</yloc>
       <attributes_hac/>
     </action>
@@ -232,8 +232,36 @@
       <type>SUCCESS</type>
       <attributes/>
       <parallel>N</parallel>
-      <xloc>1200</xloc>
+      <xloc>1248</xloc>
       <yloc>160</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>workflow01_pipeline03_divisao_dimension.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>/home/sergio/workspace/github/sergiosouzalima/apachehop-dw-salary-payments/workflow01_pipeline03_divisao_dimension.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>336</xloc>
+      <yloc>144</yloc>
       <attributes_hac/>
     </action>
   </actions>
@@ -248,13 +276,6 @@
     <hop>
       <from>workflow01_pipeline01_stage.hpl</from>
       <to>workflow01_pipeline02_calendar_dimension.hpl</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>workflow01_pipeline02_calendar_dimension.hpl</from>
-      <to>workflow01_pipeline03_setor_dimension.hpl</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
@@ -293,6 +314,20 @@
       <enabled>Y</enabled>
       <evaluation>N</evaluation>
       <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>workflow01_pipeline02_calendar_dimension.hpl</from>
+      <to>workflow01_pipeline03_divisao_dimension.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>workflow01_pipeline03_divisao_dimension.hpl</from>
+      <to>workflow01_pipeline03_setor_dimension.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
     </hop>
   </hops>
   <notepads>

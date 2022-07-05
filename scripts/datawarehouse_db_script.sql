@@ -3,6 +3,8 @@
 -- Database name: datawarehouse_db
 -- RDBMS........: PostgreSQL
 
+-- DIM_DIVISAO -----------------------------------------------------
+
 DROP TABLE IF EXISTS public.DIM_DIVISAO;
 
 CREATE TABLE public.DIM_DIVISAO(
@@ -36,6 +38,47 @@ VALUES(
     '2199-12-31' -- ETL_DT_FIM
 );                
 
+
+INSERT INTO public.DIM_DIVISAO(
+	SK_ID_DIVISAO, 
+	NK_ID_DIVISAO, 
+	DS_DIVISAO, 
+	DIM_DS_OBSERVACAO, 
+	ETL_NR_VERSION, 
+	ETL_DT_INICIO, 
+	ETL_DT_FIM
+)
+VALUES(
+    -1, -- SK_ID_DIVISAO
+     0, -- NK_ID_DIVISAO
+    '** NAO ENCONTRADO **', -- DS_DIVISAO  
+    'NAO ENCONTRADO = Quando a tabela fato não acha a SK na tabela dimensão.', -- DIM_DS_OBSERVACAO
+     0, -- ETL_NR_VERSION
+    '1900-01-01', -- ETL_DT_INICIO 
+    '2199-12-31' -- ETL_DT_FIM
+);
+
+INSERT INTO public.DIM_DIVISAO(
+	SK_ID_DIVISAO, 
+	NK_ID_DIVISAO, 
+	DS_DIVISAO, 
+	DIM_DS_OBSERVACAO, 
+	ETL_NR_VERSION, 
+	ETL_DT_INICIO, 
+	ETL_DT_FIM
+)
+VALUES(
+    -2, -- SK_ID_DIVISAO
+     0, -- NK_ID_DIVISAO
+    '** NAO SE APLICA **', -- DS_DIVISAO  
+    'NAO SE APLICA = Quando o cruzamento entre tabela fato e tabela dimensão nao existe ou nao faz sentido.', -- DIM_DS_OBSERVACAO
+     0, -- ETL_NR_VERSION
+    '1900-01-01', -- ETL_DT_INICIO 
+    '2199-12-31' -- ETL_DT_FIM
+);
+
+-- DIM_SETOR -----------------------------------------------------
+
 DROP TABLE IF EXISTS public.DIM_SETOR;
 
 CREATE TABLE public.DIM_SETOR(
@@ -67,8 +110,48 @@ VALUES(
     0, -- ETL_NR_VERSION
     '1900-01-01', -- ETL_DT_INICIO 
     '2199-12-31' -- ETL_DT_FIM
-);                
+);
 
+INSERT INTO public.DIM_SETOR(
+	SK_ID_SETOR, 
+	NK_ID_SETOR, 
+	DS_SETOR, 
+	DIM_DS_OBSERVACAO, 
+	ETL_NR_VERSION, 
+	ETL_DT_INICIO, 
+	ETL_DT_FIM
+)
+VALUES(
+    -1, -- SK_ID_SETOR
+     0, -- NK_ID_SETOR
+    '** NAO ENCONTRADO **', -- DS_SETOR  
+    'NAO ENCONTRADO = Quando a tabela fato não acha a SK na tabela dimensão.', -- DIM_DS_OBSERVACAO
+     0, -- ETL_NR_VERSION
+    '1900-01-01', -- ETL_DT_INICIO 
+    '2199-12-31' -- ETL_DT_FIM
+);
+
+INSERT INTO public.DIM_SETOR(
+	SK_ID_SETOR, 
+	NK_ID_SETOR, 
+	DS_SETOR, 
+	DIM_DS_OBSERVACAO, 
+	ETL_NR_VERSION, 
+	ETL_DT_INICIO, 
+	ETL_DT_FIM
+)
+VALUES(
+    -2, -- SK_ID_SETOR
+     0, -- NK_ID_SETOR
+    '** NAO SE APLICA **', -- DS_SETOR  
+    'NAO SE APLICA = Quando o cruzamento entre tabela fato e tabela dimensão nao existe ou nao faz sentido.', -- DIM_DS_OBSERVACAO
+     0, -- ETL_NR_VERSION
+    '1900-01-01', -- ETL_DT_INICIO 
+    '2199-12-31' -- ETL_DT_FIM
+);
+
+-- DIM_CARGO -----------------------------------------------------
+    
 DROP TABLE IF EXISTS public.DIM_CARGO;
 
 CREATE TABLE public.DIM_CARGO(
@@ -95,13 +178,52 @@ INSERT INTO public.DIM_CARGO(
 VALUES(
     0, -- SK_ID_CARGO -- registro default do Apache HOP
     0, -- NK_ID_CARGO
-    '** NAO ENCONTRADO **', -- DS_CARGO 
+    '** NAO ENCONTRADO **', -- DS_CARGO  
     'NAO ENCONTRADO = Quando a tabela fato não acha a SK na tabela dimensão.', -- DIM_DS_OBSERVACAO
     0, -- ETL_NR_VERSION
     '1900-01-01', -- ETL_DT_INICIO 
     '2199-12-31' -- ETL_DT_FIM
 );
 
+INSERT INTO public.DIM_CARGO(
+	SK_ID_CARGO, 
+	NK_ID_CARGO, 
+	DS_CARGO, 
+	DIM_DS_OBSERVACAO, 
+	ETL_NR_VERSION, 
+	ETL_DT_INICIO, 
+	ETL_DT_FIM
+)
+VALUES(
+    -1, -- SK_ID_CARGO
+     0, -- NK_ID_CARGO
+    '** NAO ENCONTRADO **', -- DS_CARGO  
+    'NAO ENCONTRADO = Quando a tabela fato não acha a SK na tabela dimensão.', -- DIM_DS_OBSERVACAO
+     0, -- ETL_NR_VERSION
+    '1900-01-01', -- ETL_DT_INICIO 
+    '2199-12-31' -- ETL_DT_FIM
+);
+
+INSERT INTO public.DIM_CARGO(
+	SK_ID_CARGO, 
+	NK_ID_CARGO, 
+	DS_CARGO, 
+	DIM_DS_OBSERVACAO, 
+	ETL_NR_VERSION, 
+	ETL_DT_INICIO, 
+	ETL_DT_FIM
+)
+VALUES(
+    -2, -- SK_ID_CARGO
+     0, -- NK_ID_CARGO
+    '** NAO SE APLICA **', -- DS_CARGO  
+    'NAO SE APLICA = Quando o cruzamento entre tabela fato e tabela dimensão nao existe ou nao faz sentido.', -- DIM_DS_OBSERVACAO
+     0, -- ETL_NR_VERSION
+    '1900-01-01', -- ETL_DT_INICIO 
+    '2199-12-31' -- ETL_DT_FIM
+);
+
+-- DIM_DEPARTAMENTO -----------------------------------------------------
 
 DROP TABLE IF EXISTS public.DIM_DEPARTAMENTO;
 
@@ -129,12 +251,52 @@ INSERT INTO public.DIM_DEPARTAMENTO(
 VALUES(
     0, -- SK_ID_DEPARTAMENTO -- registro default do Apache HOP
     0, -- NK_ID_DEPARTAMENTO
-    '** NAO ENCONTRADO **', -- DS_DEPARTAMENTO 
+    '** NAO ENCONTRADO **', -- DS_DEPARTAMENTO  
     'NAO ENCONTRADO = Quando a tabela fato não acha a SK na tabela dimensão.', -- DIM_DS_OBSERVACAO
     0, -- ETL_NR_VERSION
     '1900-01-01', -- ETL_DT_INICIO 
     '2199-12-31' -- ETL_DT_FIM
 );
+
+INSERT INTO public.DIM_DEPARTAMENTO(
+	SK_ID_DEPARTAMENTO, 
+	NK_ID_DEPARTAMENTO, 
+	DS_DEPARTAMENTO, 
+	DIM_DS_OBSERVACAO, 
+	ETL_NR_VERSION, 
+	ETL_DT_INICIO, 
+	ETL_DT_FIM
+)
+VALUES(
+    -1, -- SK_ID_DEPARTAMENTO
+     0, -- NK_ID_DEPARTAMENTO
+    '** NAO ENCONTRADO **', -- DS_DEPARTAMENTO  
+    'NAO ENCONTRADO = Quando a tabela fato não acha a SK na tabela dimensão.', -- DIM_DS_OBSERVACAO
+     0, -- ETL_NR_VERSION
+    '1900-01-01', -- ETL_DT_INICIO 
+    '2199-12-31' -- ETL_DT_FIM
+);
+
+INSERT INTO public.DIM_DEPARTAMENTO(
+	SK_ID_DEPARTAMENTO, 
+	NK_ID_DEPARTAMENTO, 
+	DS_DEPARTAMENTO, 
+	DIM_DS_OBSERVACAO, 
+	ETL_NR_VERSION, 
+	ETL_DT_INICIO, 
+	ETL_DT_FIM
+)
+VALUES(
+    -2, -- SK_ID_DEPARTAMENTO
+     0, -- NK_ID_DEPARTAMENTO
+    '** NAO SE APLICA **', -- DS_DEPARTAMENTO  
+    'NAO SE APLICA = Quando o cruzamento entre tabela fato e tabela dimensão nao existe ou nao faz sentido.', -- DIM_DS_OBSERVACAO
+     0, -- ETL_NR_VERSION
+    '1900-01-01', -- ETL_DT_INICIO 
+    '2199-12-31' -- ETL_DT_FIM
+);
+
+-- DIM_FUNCIONARIO -----------------------------------------------------
 
 DROP TABLE IF EXISTS public.DIM_FUNCIONARIO;
 
@@ -154,8 +316,8 @@ CREATE TABLE public.DIM_FUNCIONARIO(
 INSERT INTO public.DIM_FUNCIONARIO(
 	SK_ID_FUNCIONARIO, 
 	NK_ID_FUNCIONARIO, 
-	NM_FUNCIONARIO, 
-	NM_SOBRENOME_FUNCIONARIO, 
+	NM_FUNCIONARIO,
+	NM_SOBRENOME_FUNCIONARIO,
 	DIM_DS_OBSERVACAO, 
 	ETL_NR_VERSION, 
 	ETL_DT_INICIO, 
@@ -164,15 +326,57 @@ INSERT INTO public.DIM_FUNCIONARIO(
 VALUES(
     0, -- SK_ID_FUNCIONARIO -- registro default do Apache HOP
     0, -- NK_ID_FUNCIONARIO
-    '** NAO ENCONTRADO **', -- NM_FUNCIONARIO 
-    '** NAO ENCONTRADO **', -- NM_SOBRENOME_FUNCIONARIO 
+    '** NAO ENCONTRADO **', -- NM_FUNCIONARIO
+    '** NAO ENCONTRADO **', -- NM_SOBRENOME_FUNCIONARIO,  
     'NAO ENCONTRADO = Quando a tabela fato não acha a SK na tabela dimensão.', -- DIM_DS_OBSERVACAO
     0, -- ETL_NR_VERSION
     '1900-01-01', -- ETL_DT_INICIO 
     '2199-12-31' -- ETL_DT_FIM
 );
 
+INSERT INTO public.DIM_FUNCIONARIO(
+	SK_ID_FUNCIONARIO, 
+	NK_ID_FUNCIONARIO, 
+	NM_FUNCIONARIO,
+	NM_SOBRENOME_FUNCIONARIO,
+	DIM_DS_OBSERVACAO, 
+	ETL_NR_VERSION, 
+	ETL_DT_INICIO, 
+	ETL_DT_FIM
+)
+VALUES(
+    -1, -- SK_ID_FUNCIONARIO
+     0, -- NK_ID_FUNCIONARIO
+    '** NAO ENCONTRADO **', -- NM_FUNCIONARIO
+    '** NAO ENCONTRADO **', -- NM_SOBRENOME_FUNCIONARIO,  
+    'NAO ENCONTRADO = Quando a tabela fato não acha a SK na tabela dimensão.', -- DIM_DS_OBSERVACAO
+     0, -- ETL_NR_VERSION
+    '1900-01-01', -- ETL_DT_INICIO 
+    '2199-12-31' -- ETL_DT_FIM
+);
 
+INSERT INTO public.DIM_FUNCIONARIO(
+	SK_ID_FUNCIONARIO, 
+	NK_ID_FUNCIONARIO, 
+	NM_FUNCIONARIO,
+	NM_SOBRENOME_FUNCIONARIO,
+	DIM_DS_OBSERVACAO, 
+	ETL_NR_VERSION, 
+	ETL_DT_INICIO, 
+	ETL_DT_FIM
+)
+VALUES(
+    -2, -- SK_ID_FUNCIONARIO
+     0, -- NK_ID_FUNCIONARIO
+    '** NAO ENCONTRADO **', -- NM_FUNCIONARIO
+    '** NAO ENCONTRADO **', -- NM_SOBRENOME_FUNCIONARIO,  
+    'NAO SE APLICA = Quando o cruzamento entre tabela fato e tabela dimensão nao existe ou nao faz sentido.', -- DIM_DS_OBSERVACAO
+     0, -- ETL_NR_VERSION
+    '1900-01-01', -- ETL_DT_INICIO 
+    '2199-12-31' -- ETL_DT_FIM
+);
+
+-- DIM_CALENDAR -----------------------------------------------------
 
 DROP TABLE IF EXISTS public.CALENDAR;
 
@@ -198,10 +402,9 @@ CREATE TABLE public.FATO_FOLHA_PAGAMENTO(
   SK_ID_DEPARTAMENTO INTEGER,
   SK_ID_CARGO INTEGER,
   SK_ID_SETOR INTEGER,
+  SK_ID_DIVISAO INTEGER,
   DT_PAGAMENTO_SALARIO DATE,
   VL_FUNCIONARIO_SALARIO NUMERIC(18,2), 
   TS_ETL_CARGA TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT FATO_FOLHA_PAGAMENTO_PK PRIMARY KEY(ID_FATO)
 );
-
-

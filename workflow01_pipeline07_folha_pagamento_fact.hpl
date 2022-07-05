@@ -63,11 +63,6 @@
   </notepads>
   <order>
     <hop>
-      <from>Table input</from>
-      <to>Database lookup</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Database lookup</from>
       <to>Database lookup 2</to>
       <enabled>Y</enabled>
@@ -95,6 +90,16 @@
     <hop>
       <from>If Null</from>
       <to>Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Table input</from>
+      <to>Database lookup 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Database lookup 6</from>
+      <to>Database lookup</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -367,6 +372,12 @@
         <mask/>
         <set_empty_string>N</set_empty_string>
       </field>
+      <field>
+        <name>sk_id_divisao</name>
+        <value>-1</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+      </field>
     </fields>
     <attributes/>
     <GUI>
@@ -392,10 +403,12 @@
   id
 , id_funcionario
 , id_setor
+, id_divisao
 , id_cargo
 , id_departamento
 , dt_pagamento_salario
 , vl_salario
+, ts_etl_carga
 FROM "public".stage_folha_pagamento
 </sql>
     <variables_active>N</variables_active>
@@ -451,14 +464,22 @@ FROM "public".stage_folha_pagamento
         <column_name>sk_id_calendar</column_name>
         <stream_name>sk_id_calendar</stream_name>
       </field>
+      <field>
+        <column_name>sk_id_divisao</column_name>
+        <stream_name>sk_id_divisao</stream_name>
+      </field>
     </fields>
+    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
+    <schema/>
     <specify_fields>Y</specify_fields>
     <table>"public".fato_folha_pagamento</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
@@ -467,6 +488,59 @@ FROM "public".stage_folha_pagamento
     <GUI>
       <xloc>992</xloc>
       <yloc>272</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Database lookup 6</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <cache_size>0</cache_size>
+    <cache>N</cache>
+    <connection>datawarehouse-db-connection</connection>
+    <cache_load_all>N</cache_load_all>
+    <lookup>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <fail_on_multiple>N</fail_on_multiple>
+      <key>
+        <condition>=</condition>
+        <name>id_divisao</name>
+        <name2/>
+        <field>nk_id_divisao</field>
+      </key>
+      <key>
+        <condition>&lt;</condition>
+        <name>dt_pagamento_salario</name>
+        <name2/>
+        <field>etl_dt_inicio</field>
+      </key>
+      <key>
+        <condition>&gt;=</condition>
+        <name>dt_pagamento_salario</name>
+        <name2/>
+        <field>etl_dt_fim</field>
+      </key>
+      <orderby/>
+      <value>
+        <type>Integer</type>
+        <default/>
+        <rename/>
+        <name>sk_id_divisao</name>
+        <trim_type>none</trim_type>
+      </value>
+      <schema/>
+      <table>"public".dim_divisao</table>
+    </lookup>
+    <attributes/>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>384</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
