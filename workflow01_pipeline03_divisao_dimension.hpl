@@ -21,10 +21,10 @@
   </info>
   <notepads>
     <notepad>
-      <note>STAGE_DIVISAO Table</note>
-      <xloc>160</xloc>
+      <note>STG_DIVISAO</note>
+      <xloc>176</xloc>
       <yloc>112</yloc>
-      <width>146</width>
+      <width>93</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -41,10 +41,10 @@
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>DIM_DIVISAO Table</note>
-      <xloc>592</xloc>
+      <note>DIM_DIVISAO</note>
+      <xloc>608</xloc>
       <yloc>112</yloc>
-      <width>132</width>
+      <width>96</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -139,7 +139,7 @@
     <sql>SELECT
   id
 , description
-FROM "public".stage_divisao
+FROM "public".stg_divisao
 </sql>
     <variables_active>N</variables_active>
     <attributes/>

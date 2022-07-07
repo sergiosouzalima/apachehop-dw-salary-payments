@@ -61,10 +61,10 @@
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>STAGE_DEPARTAMENTO TABLE</note>
-      <xloc>400</xloc>
+      <note>STG_DEPARTAMENTO</note>
+      <xloc>448</xloc>
       <yloc>96</yloc>
-      <width>205</width>
+      <width>145</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -81,10 +81,10 @@
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>STAGE_CARGO TABLE</note>
-      <xloc>432</xloc>
+      <note>STG_CARGO</note>
+      <xloc>464</xloc>
       <yloc>256</yloc>
-      <width>145</width>
+      <width>85</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -121,10 +121,10 @@
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>STAGE_FUNCIONARIO TABLE</note>
-      <xloc>1072</xloc>
+      <note>STG_FUNCIONARIO</note>
+      <xloc>1088</xloc>
       <yloc>96</yloc>
-      <width>189</width>
+      <width>129</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -161,10 +161,10 @@
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>STAGE_FOLHA_PAGAMENTO TABLE</note>
+      <note>STG_FOLHA_PAGAMENTO</note>
       <xloc>1056</xloc>
       <yloc>256</yloc>
-      <width>230</width>
+      <width>170</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -182,11 +182,11 @@
     </notepad>
     <notepad>
       <note>Transforma descricao para 
-maiscula, e retira espacos 
+maiuscula, e retira espacos 
 no comeco e fim.</note>
       <xloc>208</xloc>
       <yloc>64</yloc>
-      <width>171</width>
+      <width>172</width>
       <heigth>58</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -204,11 +204,11 @@ no comeco e fim.</note>
     </notepad>
     <notepad>
       <note>Transforma descricao para 
-maiscula, e retira espacos 
+maiuscula, e retira espacos 
 no comeco e fim.</note>
       <xloc>224</xloc>
       <yloc>224</yloc>
-      <width>171</width>
+      <width>172</width>
       <heigth>58</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -227,10 +227,10 @@ no comeco e fim.</note>
     <notepad>
       <note>Gerar codigo ID como chave 
 primaria para tabela 
-STAGE_FOLHA_PAGAMENTO</note>
+STG_FOLHA_PAGAMENTO</note>
       <xloc>848</xloc>
       <yloc>224</yloc>
-      <width>187</width>
+      <width>181</width>
       <heigth>58</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -247,11 +247,55 @@ STAGE_FOLHA_PAGAMENTO</note>
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>STAGE_DIVISAO TABLE</note>
-      <xloc>432</xloc>
-      <yloc>384</yloc>
-      <width>153</width>
+      <note>STG_DIVISAO</note>
+      <xloc>448</xloc>
+      <yloc>416</yloc>
+      <width>93</width>
       <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Transforma descricao para 
+maiuscula, e retira espacos 
+no comeco e fim.</note>
+      <xloc>224</xloc>
+      <yloc>384</yloc>
+      <width>172</width>
+      <heigth>58</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Transforma descricao para 
+maiuscula, e retira espacos 
+no comeco e fim.</note>
+      <xloc>848</xloc>
+      <yloc>64</yloc>
+      <width>172</width>
+      <heigth>58</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
       <fontbold>N</fontbold>
@@ -425,7 +469,7 @@ STAGE_FOLHA_PAGAMENTO</note>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
-    <encoding>ISO-8859-1</encoding>
+    <encoding>UTF-8</encoding>
     <fields>
       <field>
         <name>Codigo</name>
@@ -479,7 +523,7 @@ STAGE_FOLHA_PAGAMENTO</note>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
-    <encoding>ISO-8859-1</encoding>
+    <encoding>UTF-8</encoding>
     <fields>
       <field>
         <name>Codigo</name>
@@ -642,7 +686,7 @@ STAGE_FOLHA_PAGAMENTO</note>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
     <newline_possible>N</newline_possible>
-    <encoding>ISO-8859-1</encoding>
+    <encoding>UTF-8</encoding>
     <fields>
       <field>
         <name>Codigo</name>
@@ -670,7 +714,7 @@ STAGE_FOLHA_PAGAMENTO</note>
     <attributes/>
     <GUI>
       <xloc>96</xloc>
-      <yloc>416</yloc>
+      <yloc>448</yloc>
     </GUI>
   </transform>
   <transform>
@@ -848,7 +892,7 @@ STAGE_FOLHA_PAGAMENTO</note>
     <attributes/>
     <GUI>
       <xloc>288</xloc>
-      <yloc>416</yloc>
+      <yloc>448</yloc>
     </GUI>
   </transform>
   <transform>
@@ -866,21 +910,25 @@ STAGE_FOLHA_PAGAMENTO</note>
     <connection>stage-area-db-connection</connection>
     <fields>
       <field>
-        <column_name>ID</column_name>
+        <column_name>id_stg_departamento</column_name>
         <stream_name>Codigo</stream_name>
       </field>
       <field>
-        <column_name>DESCRIPTION</column_name>
+        <column_name>ds_stg_departamento</column_name>
         <stream_name>Departamento</stream_name>
       </field>
     </fields>
+    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
+    <schema/>
     <specify_fields>Y</specify_fields>
-    <table>STAGE_DEPARTAMENTO</table>
+    <table>"public".stg_departamento</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
@@ -906,21 +954,25 @@ STAGE_FOLHA_PAGAMENTO</note>
     <connection>stage-area-db-connection</connection>
     <fields>
       <field>
-        <column_name>ID</column_name>
+        <column_name>id_stg_cargo</column_name>
         <stream_name>Codigo</stream_name>
       </field>
       <field>
-        <column_name>DESCRIPTION</column_name>
+        <column_name>ds_stg_cargo</column_name>
         <stream_name>Cargo</stream_name>
       </field>
     </fields>
+    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
+    <schema/>
     <specify_fields>Y</specify_fields>
-    <table>STAGE_CARGO</table>
+    <table>"public".stg_cargo</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
@@ -946,25 +998,29 @@ STAGE_FOLHA_PAGAMENTO</note>
     <connection>stage-area-db-connection</connection>
     <fields>
       <field>
-        <column_name>ID</column_name>
+        <column_name>id_stg_funcionario</column_name>
         <stream_name>Codigo</stream_name>
       </field>
       <field>
-        <column_name>NOME</column_name>
+        <column_name>nm_stg_funcionario</column_name>
         <stream_name>Nome</stream_name>
       </field>
       <field>
-        <column_name>SOBRENOME</column_name>
+        <column_name>nm_stg_funcionario_sobrenome</column_name>
         <stream_name>Sobrenome</stream_name>
       </field>
     </fields>
+    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
+    <schema/>
     <specify_fields>Y</specify_fields>
-    <table>STAGE_FUNCIONARIO</table>
+    <table>"public".stg_funcionario</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
@@ -990,41 +1046,45 @@ STAGE_FOLHA_PAGAMENTO</note>
     <connection>stage-area-db-connection</connection>
     <fields>
       <field>
-        <column_name>ID_FUNCIONARIO</column_name>
-        <stream_name>Funcionario</stream_name>
-      </field>
-      <field>
-        <column_name>ID_CARGO</column_name>
-        <stream_name>Cargo</stream_name>
-      </field>
-      <field>
-        <column_name>ID_DEPARTAMENTO</column_name>
-        <stream_name>Departamento</stream_name>
-      </field>
-      <field>
-        <column_name>DT_PAGAMENTO_SALARIO</column_name>
-        <stream_name>Data</stream_name>
-      </field>
-      <field>
-        <column_name>VL_SALARIO</column_name>
-        <stream_name>Salário</stream_name>
-      </field>
-      <field>
-        <column_name>ID</column_name>
+        <column_name>id_stg_folha_pagamento</column_name>
         <stream_name>id</stream_name>
       </field>
       <field>
-        <column_name>id_divisao</column_name>
+        <column_name>id_stg_cargo</column_name>
+        <stream_name>Cargo</stream_name>
+      </field>
+      <field>
+        <column_name>id_stg_departamento</column_name>
+        <stream_name>Departamento</stream_name>
+      </field>
+      <field>
+        <column_name>id_stg_divisao</column_name>
         <stream_name>Divisao</stream_name>
       </field>
+      <field>
+        <column_name>id_stg_funcionario</column_name>
+        <stream_name>Funcionario</stream_name>
+      </field>
+      <field>
+        <column_name>dt_stg_pagamento_salario</column_name>
+        <stream_name>Data</stream_name>
+      </field>
+      <field>
+        <column_name>vl_stg_salario</column_name>
+        <stream_name>Salário</stream_name>
+      </field>
     </fields>
+    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
+    <schema/>
     <specify_fields>Y</specify_fields>
-    <table>"public".stage_folha_pagamento</table>
+    <table>"public".stg_folha_pagamento</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
@@ -1050,21 +1110,25 @@ STAGE_FOLHA_PAGAMENTO</note>
     <connection>stage-area-db-connection</connection>
     <fields>
       <field>
-        <column_name>id</column_name>
+        <column_name>id_stg_divisao</column_name>
         <stream_name>Codigo</stream_name>
       </field>
       <field>
-        <column_name>description</column_name>
+        <column_name>ds_stg_divisao</column_name>
         <stream_name>Divisao</stream_name>
       </field>
     </fields>
+    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
+    <schema/>
     <specify_fields>Y</specify_fields>
-    <table>"public".stage_divisao</table>
+    <table>"public".stg_divisao</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
@@ -1072,7 +1136,7 @@ STAGE_FOLHA_PAGAMENTO</note>
     <attributes/>
     <GUI>
       <xloc>480</xloc>
-      <yloc>416</yloc>
+      <yloc>448</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
