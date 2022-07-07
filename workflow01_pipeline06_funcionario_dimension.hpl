@@ -86,30 +86,30 @@
     <update>Y</update>
     <fields>
       <key>
-        <name>id</name>
-        <lookup>nk_id_funcionario</lookup>
+        <name>id_stg_funcionario</name>
+        <lookup>nk_dim_funcionario</lookup>
       </key>
       <date>
         <name/>
-        <from>ETL_DT_INICIO</from>
-        <to>ETL_DT_FIM</to>
+        <from>dt_dim_funcionario_inicio</from>
+        <to>dt_dim_funcionario_fim</to>
       </date>
       <field>
-        <name>nome</name>
-        <lookup>nm_funcionario</lookup>
+        <name>nm_stg_funcionario</name>
+        <lookup>nm_dim_funcionario</lookup>
         <update>Insert</update>
       </field>
       <field>
-        <name>sobrenome</name>
-        <lookup>nm_sobrenome_funcionario</lookup>
+        <name>nm_stg_funcionario_sobrenome</name>
+        <lookup>nm_dim_funcionario_sobrenome</lookup>
         <update>Insert</update>
       </field>
       <return>
-        <name>sk_id_funcionario</name>
+        <name>sk_dim_funcionario</name>
         <rename/>
         <creation_method>tablemax</creation_method>
         <use_autoinc>N</use_autoinc>
-        <version>ETL_NR_VERSION</version>
+        <version>nr_dim_funcionario_versao</version>
       </return>
     </fields>
     <sequence/>
@@ -142,9 +142,10 @@
     <execute_each_row>N</execute_each_row>
     <limit>0</limit>
     <sql>SELECT
-  id
-, nome
-, sobrenome
+  id_stg_funcionario
+, nm_stg_funcionario
+, nm_stg_funcionario_sobrenome
+, ts_stg_funcionario_carga
 FROM "public".stg_funcionario
 </sql>
     <variables_active>N</variables_active>

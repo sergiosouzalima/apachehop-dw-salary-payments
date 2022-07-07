@@ -86,25 +86,25 @@
     <update>Y</update>
     <fields>
       <key>
-        <name>id</name>
-        <lookup>nk_id_cargo</lookup>
+        <name>id_stg_cargo</name>
+        <lookup>nk_dim_cargo</lookup>
       </key>
       <date>
         <name/>
-        <from>ETL_DT_INICIO</from>
-        <to>ETL_DT_FIM</to>
+        <from>dt_dim_cargo_inicio</from>
+        <to>dt_dim_cargo_fim</to>
       </date>
       <field>
-        <name>DESCRIPTION</name>
-        <lookup>ds_cargo</lookup>
+        <name>ds_stg_cargo</name>
+        <lookup>ds_dim_cargo</lookup>
         <update>Insert</update>
       </field>
       <return>
-        <name>sk_id_cargo</name>
+        <name>sk_dim_cargo</name>
         <rename/>
         <creation_method>tablemax</creation_method>
         <use_autoinc>N</use_autoinc>
-        <version>ETL_NR_VERSION</version>
+        <version>nr_dim_cargo_versao</version>
       </return>
     </fields>
     <sequence/>
@@ -137,8 +137,9 @@
     <execute_each_row>N</execute_each_row>
     <limit>0</limit>
     <sql>SELECT
-  id
-, description
+  id_stg_cargo
+, ds_stg_cargo
+, ts_stg_cargo_carga
 FROM "public".stg_cargo
 </sql>
     <variables_active>N</variables_active>

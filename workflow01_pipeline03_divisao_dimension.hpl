@@ -86,25 +86,25 @@
     <update>Y</update>
     <fields>
       <key>
-        <name>ID</name>
-        <lookup>nk_id_divisao</lookup>
+        <name>id_stg_divisao</name>
+        <lookup>nk_dim_divisao</lookup>
       </key>
       <date>
         <name/>
-        <from>ETL_DT_INICIO</from>
-        <to>ETL_DT_FIM</to>
+        <from>dt_dim_divisao_inicio</from>
+        <to>dt_dim_divisao_fim</to>
       </date>
       <field>
-        <name>DESCRIPTION</name>
-        <lookup>DS_DIVISAO</lookup>
+        <name>ds_stg_divisao</name>
+        <lookup>ds_dim_divisao</lookup>
         <update>Insert</update>
       </field>
       <return>
-        <name>SK_ID_DIVISAO</name>
+        <name>sk_dim_divisao</name>
         <rename/>
         <creation_method>tablemax</creation_method>
         <use_autoinc>N</use_autoinc>
-        <version>ETL_NR_VERSION</version>
+        <version>nr_dim_divisao_versao</version>
       </return>
     </fields>
     <sequence/>
@@ -137,8 +137,9 @@
     <execute_each_row>N</execute_each_row>
     <limit>0</limit>
     <sql>SELECT
-  id
-, description
+  id_stg_divisao
+, ds_stg_divisao
+, ts_stg_divisao_carga
 FROM "public".stg_divisao
 </sql>
     <variables_active>N</variables_active>

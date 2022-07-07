@@ -21,10 +21,10 @@
   </info>
   <notepads>
     <notepad>
-      <note>STAGE_FOLHA_PAGAMENTO TABLE</note>
-      <xloc>48</xloc>
+      <note>STG_FOLHA_PAGAMENTO</note>
+      <xloc>80</xloc>
       <yloc>96</yloc>
-      <width>230</width>
+      <width>170</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -41,10 +41,130 @@
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>Gravar dados em FATO_FOLHA_PAGAMENTO</note>
-      <xloc>880</xloc>
+      <note>FAT_FOLHA_PAGAMENTO</note>
+      <xloc>928</xloc>
       <yloc>336</yloc>
-      <width>283</width>
+      <width>170</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>STG_DIVISAO</note>
+      <xloc>208</xloc>
+      <yloc>336</yloc>
+      <width>93</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>STG_CARGA</note>
+      <xloc>368</xloc>
+      <yloc>96</yloc>
+      <width>84</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>DIM_DEPARTAMENTO</note>
+      <xloc>464</xloc>
+      <yloc>336</yloc>
+      <width>148</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>DIM_FUNCIONARIO</note>
+      <xloc>576</xloc>
+      <yloc>96</yloc>
+      <width>132</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>DIM_CALENDAR</note>
+      <xloc>720</xloc>
+      <yloc>336</yloc>
+      <width>112</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Atribui -1 se SK esta vazia</note>
+      <xloc>784</xloc>
+      <yloc>96</yloc>
+      <width>161</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -118,22 +238,22 @@
       <fail_on_multiple>N</fail_on_multiple>
       <key>
         <condition>=</condition>
-        <name>id_cargo</name>
-        <field>nk_id_cargo</field>
+        <name>id_stg_cargo</name>
+        <field>nk_dim_cargo</field>
       </key>
       <key>
         <condition>&lt;</condition>
-        <name>dt_pagamento_salario</name>
-        <field>etl_dt_inicio</field>
+        <name>dt_stg_pagamento_salario</name>
+        <field>dt_dim_cargo_inicio</field>
       </key>
       <key>
         <condition>&gt;=</condition>
-        <name>dt_pagamento_salario</name>
-        <field>etl_dt_fim</field>
+        <name>dt_stg_pagamento_salario</name>
+        <field>dt_dim_cargo_fim</field>
       </key>
       <value>
         <type>Integer</type>
-        <name>sk_id_cargo</name>
+        <name>sk_dim_cargo</name>
         <trim_type>none</trim_type>
       </value>
       <table>"public".dim_cargo</table>
@@ -164,22 +284,22 @@
       <fail_on_multiple>N</fail_on_multiple>
       <key>
         <condition>=</condition>
-        <name>id_departamento</name>
-        <field>nk_id_departamento</field>
+        <name>id_stg_departamento</name>
+        <field>nk_dim_departamento</field>
       </key>
       <key>
         <condition>&lt;</condition>
-        <name>dt_pagamento_salario</name>
-        <field>etl_dt_inicio</field>
+        <name>dt_stg_pagamento_salario</name>
+        <field>dt_dim_departamento_inicio</field>
       </key>
       <key>
         <condition>&gt;=</condition>
-        <name>dt_pagamento_salario</name>
-        <field>etl_dt_fim</field>
+        <name>dt_stg_pagamento_salario</name>
+        <field>dt_dim_departamento_fim</field>
       </key>
       <value>
         <type>Integer</type>
-        <name>sk_id_departamento</name>
+        <name>sk_dim_departamento</name>
         <trim_type>none</trim_type>
       </value>
       <table>"public".dim_departamento</table>
@@ -210,22 +330,22 @@
       <fail_on_multiple>N</fail_on_multiple>
       <key>
         <condition>=</condition>
-        <name>id_funcionario</name>
-        <field>nk_id_funcionario</field>
+        <name>id_stg_funcionario</name>
+        <field>nk_dim_funcionario</field>
       </key>
       <key>
         <condition>&lt;</condition>
-        <name>dt_pagamento_salario</name>
-        <field>etl_dt_inicio</field>
+        <name>dt_stg_pagamento_salario</name>
+        <field>dt_dim_funcionario_inicio</field>
       </key>
       <key>
         <condition>&gt;=</condition>
-        <name>dt_pagamento_salario</name>
-        <field>etl_dt_fim</field>
+        <name>dt_stg_pagamento_salario</name>
+        <field>dt_dim_funcionario_fim</field>
       </key>
       <value>
         <type>Integer</type>
-        <name>sk_id_funcionario</name>
+        <name>sk_dim_funcionario</name>
         <trim_type>none</trim_type>
       </value>
       <table>"public".dim_funcionario</table>
@@ -256,15 +376,15 @@
       <fail_on_multiple>N</fail_on_multiple>
       <key>
         <condition>=</condition>
-        <name>dt_pagamento_salario</name>
-        <field>calendar_date</field>
+        <name>dt_stg_pagamento_salario</name>
+        <field>dt_dim_calendar</field>
       </key>
       <value>
         <type>Integer</type>
-        <name>sk_id_calendar</name>
+        <name>id_dim_calendar</name>
         <trim_type>none</trim_type>
       </value>
-      <table>"public".calendar</table>
+      <table>"public".dim_calendar</table>
     </lookup>
     <attributes/>
     <GUI>
@@ -292,22 +412,22 @@
       <fail_on_multiple>N</fail_on_multiple>
       <key>
         <condition>=</condition>
-        <name>id_divisao</name>
-        <field>nk_id_divisao</field>
+        <name>id_stg_divisao</name>
+        <field>nk_dim_divisao</field>
       </key>
       <key>
         <condition>&lt;</condition>
-        <name>dt_pagamento_salario</name>
-        <field>etl_dt_inicio</field>
+        <name>dt_stg_pagamento_salario</name>
+        <field>dt_dim_divisao_inicio</field>
       </key>
       <key>
         <condition>&gt;=</condition>
-        <name>dt_pagamento_salario</name>
-        <field>etl_dt_fim</field>
+        <name>dt_stg_pagamento_salario</name>
+        <field>dt_dim_divisao_fim</field>
       </key>
       <value>
         <type>Integer</type>
-        <name>sk_id_divisao</name>
+        <name>sk_dim_divisao</name>
         <trim_type>none</trim_type>
       </value>
       <table>"public".dim_divisao</table>
@@ -338,31 +458,31 @@
       </valuetypes>
     <fields>
       <field>
-        <name>sk_id_calendar</name>
+        <name>id_dim_calendar</name>
         <value>-1</value>
         <mask/>
         <set_empty_string>N</set_empty_string>
       </field>
       <field>
-        <name>sk_id_cargo</name>
+        <name>sk_dim_cargo</name>
         <value>-1</value>
         <mask/>
         <set_empty_string>N</set_empty_string>
       </field>
       <field>
-        <name>sk_id_departamento</name>
+        <name>sk_dim_departamento</name>
         <value>-1</value>
         <mask/>
         <set_empty_string>N</set_empty_string>
       </field>
       <field>
-        <name>sk_id_funcionario</name>
+        <name>sk_dim_funcionario</name>
         <value>-1</value>
         <mask/>
         <set_empty_string>N</set_empty_string>
       </field>
       <field>
-        <name>sk_id_divisao</name>
+        <name>sk_dim_divisao</name>
         <value>-1</value>
         <mask/>
         <set_empty_string>N</set_empty_string>
@@ -389,15 +509,15 @@
     <execute_each_row>N</execute_each_row>
     <limit>0</limit>
     <sql>SELECT
-  id
-, id_funcionario
-, id_divisao
-, id_cargo
-, id_departamento
-, dt_pagamento_salario
-, vl_salario
-, ts_etl_carga
-FROM "public".stage_folha_pagamento
+  id_stg_folha_pagamento
+, id_stg_funcionario
+, id_stg_divisao
+, id_stg_cargo
+, id_stg_departamento
+, dt_stg_pagamento_salario
+, vl_stg_salario
+, ts_stg_folha_pagamento_carga
+FROM "public".stg_folha_pagamento
 </sql>
     <variables_active>N</variables_active>
     <attributes/>
@@ -421,45 +541,49 @@ FROM "public".stage_folha_pagamento
     <connection>datawarehouse-db-connection</connection>
     <fields>
       <field>
-        <column_name>id_fato</column_name>
-        <stream_name>id</stream_name>
+        <column_name>id_fat_folha_pagamento</column_name>
+        <stream_name>id_stg_folha_pagamento</stream_name>
       </field>
       <field>
-        <column_name>dt_pagamento_salario</column_name>
-        <stream_name>dt_pagamento_salario</stream_name>
+        <column_name>id_dim_calendar</column_name>
+        <stream_name>id_dim_calendar</stream_name>
       </field>
       <field>
-        <column_name>sk_id_cargo</column_name>
-        <stream_name>sk_id_cargo</stream_name>
+        <column_name>sk_dim_funcionario</column_name>
+        <stream_name>sk_dim_funcionario</stream_name>
       </field>
       <field>
-        <column_name>sk_id_departamento</column_name>
-        <stream_name>sk_id_departamento</stream_name>
+        <column_name>sk_dim_divisao</column_name>
+        <stream_name>sk_dim_divisao</stream_name>
       </field>
       <field>
-        <column_name>sk_id_funcionario</column_name>
-        <stream_name>sk_id_funcionario</stream_name>
+        <column_name>sk_dim_cargo</column_name>
+        <stream_name>sk_dim_cargo</stream_name>
       </field>
       <field>
-        <column_name>vl_funcionario_salario</column_name>
-        <stream_name>vl_salario</stream_name>
+        <column_name>sk_dim_departamento</column_name>
+        <stream_name>sk_dim_departamento</stream_name>
       </field>
       <field>
-        <column_name>sk_id_calendar</column_name>
-        <stream_name>sk_id_calendar</stream_name>
+        <column_name>dt_fat_folha_pagamento_salario</column_name>
+        <stream_name>dt_stg_pagamento_salario</stream_name>
       </field>
       <field>
-        <column_name>sk_id_divisao</column_name>
-        <stream_name>sk_id_divisao</stream_name>
+        <column_name>vl_fat_folha_pagamento_salario</column_name>
+        <stream_name>vl_stg_salario</stream_name>
       </field>
     </fields>
+    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
+    <schema/>
     <specify_fields>Y</specify_fields>
-    <table>"public".fato_folha_pagamento</table>
+    <table>"public".fat_folha_pagamento</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
