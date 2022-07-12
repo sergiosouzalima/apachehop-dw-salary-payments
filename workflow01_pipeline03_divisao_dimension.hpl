@@ -42,7 +42,7 @@
     </notepad>
     <notepad>
       <note>DIM_DIVISAO</note>
-      <xloc>608</xloc>
+      <xloc>496</xloc>
       <yloc>112</yloc>
       <width>96</width>
       <heigth>26</heigth>
@@ -118,7 +118,7 @@
     <useBatch>N</useBatch>
     <attributes/>
     <GUI>
-      <xloc>640</xloc>
+      <xloc>528</xloc>
       <yloc>144</yloc>
     </GUI>
   </transform>

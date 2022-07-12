@@ -82,7 +82,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>272</xloc>
+      <xloc>192</xloc>
       <yloc>160</yloc>
       <attributes_hac/>
     </action>
@@ -110,7 +110,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>592</xloc>
+      <xloc>496</xloc>
       <yloc>160</yloc>
       <attributes_hac/>
     </action>
@@ -138,7 +138,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>912</xloc>
+      <xloc>816</xloc>
       <yloc>48</yloc>
       <attributes_hac/>
     </action>
@@ -166,7 +166,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>912</xloc>
+      <xloc>816</xloc>
       <yloc>160</yloc>
       <attributes_hac/>
     </action>
@@ -194,7 +194,7 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>1248</xloc>
+      <xloc>1168</xloc>
       <yloc>48</yloc>
       <attributes_hac/>
     </action>
@@ -204,7 +204,7 @@
       <type>SUCCESS</type>
       <attributes/>
       <parallel>N</parallel>
-      <xloc>1248</xloc>
+      <xloc>1168</xloc>
       <yloc>160</yloc>
       <attributes_hac/>
     </action>

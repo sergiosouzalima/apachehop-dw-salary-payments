@@ -42,7 +42,7 @@
     </notepad>
     <notepad>
       <note>DIM_FUNCIONARIO</note>
-      <xloc>544</xloc>
+      <xloc>400</xloc>
       <yloc>112</yloc>
       <width>132</width>
       <heigth>26</heigth>
@@ -123,7 +123,7 @@
     <useBatch>N</useBatch>
     <attributes/>
     <GUI>
-      <xloc>592</xloc>
+      <xloc>448</xloc>
       <yloc>144</yloc>
     </GUI>
   </transform>

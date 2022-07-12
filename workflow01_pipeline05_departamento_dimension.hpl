@@ -42,7 +42,7 @@
     </notepad>
     <notepad>
       <note>DIM_DEPARTAMENTO</note>
-      <xloc>528</xloc>
+      <xloc>432</xloc>
       <yloc>112</yloc>
       <width>148</width>
       <heigth>26</heigth>
@@ -118,7 +118,7 @@
     <useBatch>N</useBatch>
     <attributes/>
     <GUI>
-      <xloc>592</xloc>
+      <xloc>496</xloc>
       <yloc>144</yloc>
     </GUI>
   </transform>

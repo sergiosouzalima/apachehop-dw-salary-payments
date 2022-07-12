@@ -61,10 +61,10 @@
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>STG_DIVISAO</note>
-      <xloc>208</xloc>
-      <yloc>336</yloc>
-      <width>93</width>
+      <note>DIM_DIVISAO</note>
+      <xloc>416</xloc>
+      <yloc>96</yloc>
+      <width>96</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -81,10 +81,10 @@
       <bordercolorblue>90</bordercolorblue>
     </notepad>
     <notepad>
-      <note>STG_CARGA</note>
-      <xloc>368</xloc>
+      <note>DIM_CARGO</note>
+      <xloc>576</xloc>
       <yloc>96</yloc>
-      <width>84</width>
+      <width>88</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
@@ -102,7 +102,7 @@
     </notepad>
     <notepad>
       <note>DIM_DEPARTAMENTO</note>
-      <xloc>464</xloc>
+      <xloc>544</xloc>
       <yloc>336</yloc>
       <width>148</width>
       <heigth>26</heigth>
@@ -122,7 +122,7 @@
     </notepad>
     <notepad>
       <note>DIM_FUNCIONARIO</note>
-      <xloc>576</xloc>
+      <xloc>736</xloc>
       <yloc>96</yloc>
       <width>132</width>
       <heigth>26</heigth>
@@ -142,7 +142,7 @@
     </notepad>
     <notepad>
       <note>DIM_CALENDAR</note>
-      <xloc>720</xloc>
+      <xloc>752</xloc>
       <yloc>336</yloc>
       <width>112</width>
       <heigth>26</heigth>
@@ -162,13 +162,53 @@
     </notepad>
     <notepad>
       <note>Atribui -1 se SK esta vazia</note>
-      <xloc>784</xloc>
+      <xloc>928</xloc>
       <yloc>96</yloc>
       <width>161</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
       <fontsize>10</fontsize>
       <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>STAGE AREA</note>
+      <xloc>112</xloc>
+      <yloc>32</yloc>
+      <width>90</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>Y</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>DATA WAREHOUSE AREA</note>
+      <xloc>672</xloc>
+      <yloc>32</yloc>
+      <width>173</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>Y</fontbold>
       <fontitalic>N</fontitalic>
       <fontcolorred>14</fontcolorred>
       <fontcolorgreen>58</fontcolorgreen>
@@ -260,7 +300,7 @@
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>400</xloc>
+      <xloc>608</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -306,7 +346,7 @@
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>512</xloc>
+      <xloc>608</xloc>
       <yloc>272</yloc>
     </GUI>
   </transform>
@@ -352,7 +392,7 @@
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>624</xloc>
+      <xloc>784</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -388,7 +428,7 @@
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>752</xloc>
+      <xloc>784</xloc>
       <yloc>272</yloc>
     </GUI>
   </transform>
@@ -434,8 +474,8 @@
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>240</xloc>
-      <yloc>272</yloc>
+      <xloc>448</xloc>
+      <yloc>128</yloc>
     </GUI>
   </transform>
   <transform>
@@ -490,7 +530,7 @@
     </fields>
     <attributes/>
     <GUI>
-      <xloc>864</xloc>
+      <xloc>992</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -573,17 +613,13 @@ FROM "public".stg_folha_pagamento
         <stream_name>vl_stg_salario</stream_name>
       </field>
     </fields>
-    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
-    <schema/>
     <specify_fields>Y</specify_fields>
     <table>"public".fat_folha_pagamento</table>
-    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>

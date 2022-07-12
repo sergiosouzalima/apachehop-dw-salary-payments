@@ -42,7 +42,7 @@
     </notepad>
     <notepad>
       <note>DIM_CARGO</note>
-      <xloc>352</xloc>
+      <xloc>400</xloc>
       <yloc>112</yloc>
       <width>88</width>
       <heigth>26</heigth>
@@ -118,7 +118,7 @@
     <useBatch>N</useBatch>
     <attributes/>
     <GUI>
-      <xloc>384</xloc>
+      <xloc>432</xloc>
       <yloc>144</yloc>
     </GUI>
   </transform>
