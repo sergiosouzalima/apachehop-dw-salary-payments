@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pipeline>
   <info>
-    <name>workflow01_pipeline07_folha_pagamento_fact</name>
+    <name>wrkf01_pipe07_folha_pagamento_fact</name>
     <name_sync_with_filename>Y</name_sync_with_filename>
     <description/>
     <extended_description/>
@@ -42,7 +42,7 @@
     </notepad>
     <notepad>
       <note>FAT_FOLHA_PAGAMENTO</note>
-      <xloc>928</xloc>
+      <xloc>880</xloc>
       <yloc>336</yloc>
       <width>170</width>
       <heigth>26</heigth>
@@ -62,7 +62,7 @@
     </notepad>
     <notepad>
       <note>DIM_DIVISAO</note>
-      <xloc>416</xloc>
+      <xloc>368</xloc>
       <yloc>96</yloc>
       <width>96</width>
       <heigth>26</heigth>
@@ -82,7 +82,7 @@
     </notepad>
     <notepad>
       <note>DIM_CARGO</note>
-      <xloc>576</xloc>
+      <xloc>528</xloc>
       <yloc>96</yloc>
       <width>88</width>
       <heigth>26</heigth>
@@ -102,7 +102,7 @@
     </notepad>
     <notepad>
       <note>DIM_DEPARTAMENTO</note>
-      <xloc>544</xloc>
+      <xloc>496</xloc>
       <yloc>336</yloc>
       <width>148</width>
       <heigth>26</heigth>
@@ -122,7 +122,7 @@
     </notepad>
     <notepad>
       <note>DIM_FUNCIONARIO</note>
-      <xloc>736</xloc>
+      <xloc>688</xloc>
       <yloc>96</yloc>
       <width>132</width>
       <heigth>26</heigth>
@@ -142,7 +142,7 @@
     </notepad>
     <notepad>
       <note>DIM_CALENDAR</note>
-      <xloc>752</xloc>
+      <xloc>704</xloc>
       <yloc>336</yloc>
       <width>112</width>
       <heigth>26</heigth>
@@ -162,7 +162,7 @@
     </notepad>
     <notepad>
       <note>Atribui -1 se SK esta vazia</note>
-      <xloc>928</xloc>
+      <xloc>880</xloc>
       <yloc>96</yloc>
       <width>161</width>
       <heigth>26</heigth>
@@ -202,7 +202,7 @@
     </notepad>
     <notepad>
       <note>DATA WAREHOUSE AREA</note>
-      <xloc>672</xloc>
+      <xloc>624</xloc>
       <yloc>32</yloc>
       <width>173</width>
       <heigth>26</heigth>
@@ -300,7 +300,7 @@
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>608</xloc>
+      <xloc>560</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -346,7 +346,7 @@
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>608</xloc>
+      <xloc>560</xloc>
       <yloc>272</yloc>
     </GUI>
   </transform>
@@ -392,7 +392,7 @@
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>784</xloc>
+      <xloc>736</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -428,7 +428,7 @@
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>784</xloc>
+      <xloc>736</xloc>
       <yloc>272</yloc>
     </GUI>
   </transform>
@@ -474,7 +474,7 @@
     </lookup>
     <attributes/>
     <GUI>
-      <xloc>448</xloc>
+      <xloc>400</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -530,7 +530,7 @@
     </fields>
     <attributes/>
     <GUI>
-      <xloc>992</xloc>
+      <xloc>944</xloc>
       <yloc>128</yloc>
     </GUI>
   </transform>
@@ -626,7 +626,7 @@ FROM "public".stg_folha_pagamento
     <use_batch>Y</use_batch>
     <attributes/>
     <GUI>
-      <xloc>992</xloc>
+      <xloc>944</xloc>
       <yloc>272</yloc>
     </GUI>
   </transform>

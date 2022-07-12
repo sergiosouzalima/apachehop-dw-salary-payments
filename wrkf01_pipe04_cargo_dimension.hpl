@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pipeline>
   <info>
-    <name>workflow01_pipeline04_cargo_dimension</name>
+    <name>wrkf01_pipe04_cargo_dimension</name>
     <name_sync_with_filename>Y</name_sync_with_filename>
     <description/>
     <extended_description/>
@@ -23,7 +23,7 @@
     <notepad>
       <note>STG_CARGO</note>
       <xloc>128</xloc>
-      <yloc>112</yloc>
+      <yloc>32</yloc>
       <width>85</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
@@ -42,8 +42,8 @@
     </notepad>
     <notepad>
       <note>DIM_CARGO</note>
-      <xloc>400</xloc>
-      <yloc>112</yloc>
+      <xloc>496</xloc>
+      <yloc>32</yloc>
       <width>88</width>
       <heigth>26</heigth>
       <fontname>Ubuntu</fontname>
@@ -118,8 +118,8 @@
     <useBatch>N</useBatch>
     <attributes/>
     <GUI>
-      <xloc>432</xloc>
-      <yloc>144</yloc>
+      <xloc>528</xloc>
+      <yloc>64</yloc>
     </GUI>
   </transform>
   <transform>
@@ -146,7 +146,7 @@ FROM "public".stg_cargo
     <attributes/>
     <GUI>
       <xloc>160</xloc>
-      <yloc>144</yloc>
+      <yloc>64</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
