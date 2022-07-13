@@ -66,23 +66,9 @@
   </a>
 </div>
 
-## This web page online on Netlifly
-
-<br />
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cb02f095-1da6-4783-8b07-06423614c6a3/deploy-status)](https://app.netlify.com/sites/nimble-packages/deploys)
-
-<div align="center">
-  <a href="https://nimble-packages.netlify.app">
-    <img src="images/about_the_project_02.png" alt="About the project">
-  </a>
-</div>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ### Built With
 
-* [Nim Language version 1.6.6](https://nim-lang.org/)
+* [Apache HOP version 1.2.0](https://hop.apache.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -98,14 +84,13 @@ Things you need to use and how to install them.
 
 ### Installation
 
-1. Get and install Nim for Linux/MacOS:
+1. Get and install Apache HOP for Linux/MacOS:
 	* https://nim-lang.org/install_unix.html
-2. Get and install Nim for Windows:
+2. Get and install Apache HOP for Windows:
 	* https://nim-lang.org/install_windows.html
-3. A Netlify account
+3. Java
 	* https://www.netlify.com/
-4. A repository on Github
-	* https://www.github.com/
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
