@@ -10,15 +10,15 @@
 <div align="center">
 <h3 align="center">Apache HOP Data Warehouse Project</h3>
   <p align="center">
-    Employee Salary Payments <a href="https://www.hop.apache.org">Apache HOP</a> Data Warehouse Project.
+    An Employee Salary Payments Data Warehouse.
     <br />
-    <a href="https://github.com/sergiosouzalima/nim-nimble-on-netlify">
+    <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments">
     <strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/sergiosouzalima/nim-nimble-on-netlify/issues">Report Bug</a>
+    <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/issues">Report Bug</a>
     ·
-    <a href="https://github.com/sergiosouzalima/nim-nimble-on-netlify/issues">Request Feature</a>
+    <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/issues">Request Feature</a>
   </p>
 </div>
 
@@ -50,19 +50,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-* This is a super simple <a href="https://www.nim-lang.org" target="_blank">Nim</a> program that downloads a file called packages.xml
-from <a href="https://nimble.directory/packages.xml" target="_blank">Nimble packages Directory</a>.<br />
-* After that, this program reads the packages.xml file and creates a file called index.html
-with the same content, but in a web page format.<br />
-* Visit the index.html <a href="https://nimble-packages.netlify.app" target="_blank">here</a>,
-if you want to see the web page online.
+* This is a simple <a href="https://hop.apache.org" target="_blank">Apache HOP</a> Data Warehouse project.<br />
+* The projects reads CSV files, which contains employees data, such as name, salary, department, division, etc.<br />
+* After that, there are steps that stores the previous CSV data into stage tables. See more about this below.<br />
+* Next, the DW project, appropriately moves the stages data tables into dimensions table. This process starts feeding the DW area.<br />
+* Then, the main table named "fact table", is feeded with employee salary data, meaning, the DW now is completed with all information needed.
 
 ## Compile locally
 
 <!-- About the project image -->
 <br />
 <div align="center">
-  <a href="https://github.com/sergiosouzalima/nim-nimble-on-netlify">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments">
     <img src="images/about_the_project_01.png" alt="About the project">
   </a>
 </div>
@@ -119,7 +118,7 @@ How this project can be used.
 
 3. Clone the repo
    ```sh
-   git clone https://github.com/sergiosouzalima/nim-nimble-on-netlify.git
+   git clone https://github.com/sergiosouzalima/apachehop-dw-salary-payments.git
    ```
 4. Cd into nim-nimble-on-netlify folder
    ```sh
@@ -187,15 +186,14 @@ Distributed under the MIT License.
 
 Sergio Lima - [@sergiosouzalima](https://twitter.com/sergiosouzalima) - sergiosouzalima@gmail.com
 
-Project Link: [https://github.com/sergiosouzalima/nim-nimble-on-netlify](https://github.com/sergiosouzalima/nim-nimble-on-netlify)
+Project Link: [https://github.com/sergiosouzalima/apachehop-dw-salary-payments](https://github.com/sergiosouzalima/apachehop-dw-salary-payments)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [https://forum.nim-lang.org](https://forum.nim-lang.org)
-* [Nim Lang Brazil on Telegram](https://t.me/nimbrasil)
+* [Apache Hop Brasil on Telegram](https://t.me/apachehop)
 * [This README template by Othneil Drew](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
