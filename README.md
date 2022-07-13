@@ -99,25 +99,24 @@ Things you need to use and how to install them.
 
 How this project can be used.
 
-1. Get Nim installed locally [<a href="#installation">See Installation section</a>]
+1. Get Apache HOP installed locally [<a href="#installation">See Installation section</a>]
 
 3. Clone the repo
    ```sh
    git clone https://github.com/sergiosouzalima/apachehop-dw-salary-payments.git
    ```
-4. Cd into nim-nimble-on-netlify folder
+4. Cd into apachehop-dw-salary-payments folder
    ```sh
-   cd nim-nimble-on-netlify
+   cd apachehop-dw-salary-payments
    ```
-5. Compile source code
+5. Run Apache HOP.
    ```sh
-   nim c -d:ssl --verbosity:0 --hints:off -d:danger -d:lto --opt:speed --out:exe/mainapp src/mainapp.nim
+   ./hop-gui.sh
    ```
-6. Run nimapp. This command creates public/index.html
-   ```sh
-   ./exe/nimapp
-   ```
-7. In your browser, load the file public/index.html
+6. In Apache HOP, load the file apachehop-dw-salary-payments/wrkf01_salary_payments.hwf
+
+7. Click "play" button, to run the project.
+
 
 ## Do you want this web page online?
 
