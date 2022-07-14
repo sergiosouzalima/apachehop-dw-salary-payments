@@ -73,8 +73,7 @@
 <!-- GETTING STARTED -->
 ## Iniciando
 
-See below instructions on setting up your project locally.<br />
-To get a local copy up and running follow these simple steps.
+Veja abaixo instruçoes para configurar e executar este projeto localmente.<br />
 
 ### Pré-requisitos
 
