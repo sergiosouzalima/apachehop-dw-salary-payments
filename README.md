@@ -67,7 +67,7 @@
   - Depois, o projeto armazena os dados dos arquivos CSV, em tabelas da área de stage.(<a href="#stage-area">Stage Area</a>)
 - Da área de stage para a área de DW:
   - Em seguida, o projeto move os dados da área de stage para dentro de tabelas de dimensão, que estão na área de DW.
-  - A tabela chamada "tabela fato", que está na área de DW, é alimentada com dados da folha de pagamento, como salário e data de pagamento.
+  - A tabela chamada "tabela fato", que está na área de DW, é alimentada com dados da folha de pagamento, como salário e data de pagamento.(<a href="#fact-table">Tabela Fato</a>)
 - Na área de DW:
   - Na área do DW, o projeto cria a chamada "dimensão tempo". É uma tabela que armazena datas e serve para o DW fornecer dados com base em uma determinada data.(<a href="#calendar-dim">Dimensão Tempo</a>)
 - E finalmente:
@@ -103,6 +103,19 @@
 <div align="center">
   <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/blob/master/images/wrkf01_pipe02.png">
     <img src="images/wrkf01_pipe02.png" alt="Time Dimension">
+  </a>
+</div>
+
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
+
+<div id="fact-table"></div>
+
+### Tabela Fato
+
+<br />
+<div align="center">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/blob/master/images/wrkf01_pipe07.png">
+    <img src="images/wrkf01_pipe07.png" alt="Fact Table">
   </a>
 </div>
 
