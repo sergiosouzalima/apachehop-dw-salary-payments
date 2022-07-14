@@ -35,7 +35,7 @@
     <li>
       <a href="#getting-started">Iniciando</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisitos</a></li>
+        <li><a href="#prerequisites">Pré-requisitos</a></li>
         <li><a href="#installation">Instalação</a></li>
       </ul>
     </li>
@@ -89,6 +89,8 @@
 ## Iniciando
 
 Veja abaixo instruções para configurar e executar este projeto localmente.<br />
+
+<div id="prerequisites"></div>
 
 ### Pré-requisitos
 
