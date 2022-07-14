@@ -48,10 +48,12 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+<div id="about-the-project"></div>
 ## Sobre o Projeto
 
 * Este é um simples projeto de Data Warehouse (DW) feito com a ferramenta <a href="https://hop.apache.org" target="_blank">Apache HOP</a>.<br />  
 * O projeto carrega arquivos CSV, que contêm dados de funcionários, como nome, salário, departamento, divisão, etc.<br />
+* Para ver os arquivos CSV click <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/tree/master/datasets" target="_blank">aqui</a>
 * Depois, existem passos que armazenam os dados dos arquivos CSV, em tabelas da área de stage.<br />
 * Em seguida, o projeto move os dados da área de stage para dentro de tabelas de dimensão, que estão na área de DW.<br />
 * Este processo é o início de carga de dados dentro da área do DW.<br />
@@ -59,7 +61,7 @@
 * Depois de todos esses processos, o DW está pronto para ser consultado por outras ferramentas, gerando relatórios, gráficos, dashboards, etc.
 
 ### Construido com
-
+<div id="built-with"></div>
 * [Apache HOP version 1.2.0](https://hop.apache.org/)
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
@@ -70,26 +72,22 @@
 See below instructions on setting up your project locally.<br />
 To get a local copy up and running follow these simple steps.
 
-### Pre-requisitos
+### Pré-requisitos
 
-Coisas que voce precisa saber para instalar e usar este projeto.
+1. Java 11:
+	* https://www.java.com/en/download/help/download_options.html
 
 ### Instalação
 
-1. Get and install Apache HOP for Linux/MacOS:
-	* https://nim-lang.org/install_unix.html
-2. Get and install Apache HOP for Windows:
-	* https://nim-lang.org/install_windows.html
-3. Java
-	* https://www.netlify.com/
-
+1. Aqui você encontra instruções para baixar e instalar o Apache HOP para Linux, MacOS ou Windows:
+	* https://hop.apache.org/manual/latest/getting-started/hop-download-install.html
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Modo de Uso.
 
-How this project can be used.
+Como este projeto pode ser usado.
 
 1. Get Apache HOP installed locally [<a href="#installation">See Installation section</a>]
 
@@ -152,11 +150,11 @@ Contributions are what make the open source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Faca um Fork do projeto.
+2. Crie sua Feature Branch (`git checkout -b feature/AmazingFeature`).
+3. Commit suas mudancas (`git commit -m 'Add some AmazingFeature'`).
+4. Envie para uma Branch (`git push origin feature/AmazingFeature`).
+5. Abra uma Request Pull.
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
