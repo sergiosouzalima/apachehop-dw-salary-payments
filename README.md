@@ -77,7 +77,7 @@ E uma tabela que armazena datas e serve para o DW fornecer dados com base em uma
 
 <br />
 <div align="center">
-  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/blob/master/images/wrkf01_pipe01.png">
     <img src="images/wrkf01_pipe01.png" alt="Stage Area">
   </a>
 </div>
@@ -91,7 +91,7 @@ E uma tabela que armazena datas e serve para o DW fornecer dados com base em uma
 
 <br />
 <div align="center">
-  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/blob/master/images/wrkf01_pipe02.png">
     <img src="images/wrkf01_pipe02.png" alt="Time Dimension">
   </a>
 </div>
