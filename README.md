@@ -58,17 +58,7 @@
 * Então, a tabela chamada "tabela fato", que está na área de DW, é alimentada com dados da folha de pagamento, como salário e data de pagamento.
 * Depois de todos esses processos, o DW esta pronto para ser consultado por outras ferramentas, gerando relatorios, graficos, dashboards, etc
 
-## 1 - Stage Area (carga dos arquivos CSV)
-
-<!-- About the project image -->
-<br />
-<div align="center">
-  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments">
-    <img src="images/wrkf01_pipe01.png" alt="Stage Area">
-  </a>
-</div>
-
-### Built With
+### Construido com
 
 * [Apache HOP version 1.2.0](https://hop.apache.org/)
 
@@ -144,8 +134,18 @@ How this project can be used.
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
+## 1 - Stage Area (carga dos arquivos CSV)
+
+<!-- About the project image -->
+<br />
+<div align="center">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments">
+    <img src="images/wrkf01_pipe01.png" alt="Stage Area">
+  </a>
+</div>
+
 <!-- CONTRIBUTING -->
-## Contributing
+## Contribuindo
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -161,23 +161,23 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- LICENSE -->
-## License
+## Licença
 
-Distributed under the MIT License.
+Distribuido sob a Licença do MIT.
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- CONTACT -->
-## Contact
+## Contatos
 
 Sergio Lima - [@sergiosouzalima](https://twitter.com/sergiosouzalima) - sergiosouzalima@gmail.com
 
-Project Link: [https://github.com/sergiosouzalima/apachehop-dw-salary-payments](https://github.com/sergiosouzalima/apachehop-dw-salary-payments)
+Este projeto no Github: [https://github.com/sergiosouzalima/apachehop-dw-salary-payments](https://github.com/sergiosouzalima/apachehop-dw-salary-payments)
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Agradecimentos
 
 * [Apache Hop Brasil on Telegram](https://t.me/apachehop)
 * [This README template by Othneil Drew](https://github.com/othneildrew/Best-README-Template)
