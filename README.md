@@ -73,7 +73,7 @@
 <!-- GETTING STARTED -->
 ## Iniciando
 
-Veja abaixo instruçoes para configurar e executar este projeto localmente.<br />
+Veja abaixo instruções para configurar e executar este projeto localmente.<br />
 
 ### Pré-requisitos
 
