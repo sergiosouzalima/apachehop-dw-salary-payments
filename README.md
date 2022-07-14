@@ -61,10 +61,9 @@
 * Então, a tabela chamada "tabela fato", que está na área de DW, é alimentada com dados da folha de pagamento, como salário e data de pagamento.
 * Depois de todos esses processos, o DW está pronto para ser consultado por outras ferramentas, gerando relatórios, gráficos, dashboards, etc.
 
+<div id="built-with"></div>
 ### Construido com
 * [Apache HOP version 1.2.0](https://hop.apache.org/)
-
-<div id="built-with"></div>
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
