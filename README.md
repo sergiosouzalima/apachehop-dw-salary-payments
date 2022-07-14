@@ -87,7 +87,7 @@ E uma tabela que armazena datas e serve para o DW fornecer dados com base em uma
 
 <div id="calendar-dim"></div>
 
-### Dimensão Tempo (Calendario)
+### Dimensão Tempo (Calendário)
 
 <br />
 <div align="center">
