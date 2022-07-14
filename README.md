@@ -8,55 +8,56 @@
 -->
 
 <div align="center">
-<h3 align="center">Apache HOP Data Warehouse Project -WIP README!</h3>
+<h3 align="center">Projeto de Data Warehouse em Apache HOP - WIP README!</h3>
   <p align="center">
-    An Employee Salary Payments Data Warehouse.
+    Data Warehouse de Folha de Pagamento.
     <br />
     <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments">
-    <strong>Explore the docs »</strong></a>
+    <strong>Explore os documentos »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/issues">Report Bug</a>
+    <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/issues">Informe um Bug</a>
     ·
-    <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/issues">Request Feature</a>
+    <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/issues">Solicite uma Funcionalidade</a>
   </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Indice</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Sobre o Projeto</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Construído com</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Iniciando</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation">Installação</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#usage">Uso</a></li>
+    <li><a href="#contributing">Contribuição</a></li>
+    <li><a href="#license">Licença</a></li>
+    <li><a href="#contact">Contato</a></li>
+    <li><a href="#acknowledgments">Agradecimentos</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Sobre o Projeto
 
-* This is a simple <a href="https://hop.apache.org" target="_blank">Apache HOP</a> Data Warehouse project.<br />
-* The projects reads CSV files, which contains employees data, such as name, salary, department, division, etc.<br />
-* After that, there are steps that stores the previous CSV data into stage tables. See more about this below.<br />
-* Next, the DW project, appropriately moves the stages data tables into dimensions table. This process starts feeding the DW area.<br />
-* Then, the main table named "fact table", is feeded with employee salary data, meaning, the DW now is completed with all information needed.
+* Este é um simples projeto de Data Warehouse (DW) feito com a ferramenta <a href="https://hop.apache.org" target="_blank">Apache HOP</a>.<br />  
+* O projeto carrega arquivos CSV, que contêm dados de funcionarios, como nome, salário, departamento, divisão, etc.<br />
+* Depois, existem passos que armazenam os dados dos arquivos CSV, em tabelas da área de stage.<br />
+* Em seguida, o projeto move os dados da área de stage para dentro de tabelas de dimensão, que estão na área de DW.<br />
+* Este processo é o início de carga de dados dentro da área do DW.<br />
+* Então, a tabela chamada "tabela fato", que está na área de DW, é alimentada com dados da folha de pagamento, como salário e data de pagamento.
 
-## 1# Stage Area (CSV file load)
+## 1 - Stage Area (carga dos arquivos CSV)
 
 <!-- About the project image -->
 <br />
