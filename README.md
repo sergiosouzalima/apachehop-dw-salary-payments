@@ -70,9 +70,9 @@
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 
-## 1 - Stage Area (carga dos arquivos CSV)
-
 <div id="stage-area"></div>
+
+## 1 - Stage Area (carga dos arquivos CSV)
 
 <!-- About the project image -->
 <br />
@@ -82,6 +82,7 @@
   </a>
 </div>
 
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 
 <!-- GETTING STARTED -->
