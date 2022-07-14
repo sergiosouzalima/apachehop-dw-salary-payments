@@ -168,7 +168,7 @@ Como este projeto pode ser usado.
 
 6. Click no botão "play" para executar este projeto.
 
-
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contribuindo
