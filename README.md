@@ -48,9 +48,11 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## Sobre o Projeto
 
 <div id="about-the-project"></div>
+
+
+## Sobre o Projeto
 
 * Este é um simples projeto de Data Warehouse (DW) feito com a ferramenta <a href="https://hop.apache.org" target="_blank">Apache HOP</a>.<br />
 * O projeto carrega arquivos CSV, que contêm dados de funcionários, como nome, salário, departamento, divisão, etc.<br />
@@ -62,6 +64,7 @@
 * Depois de todos esses processos, o DW está pronto para ser consultado por outras ferramentas, gerando relatórios, gráficos, dashboards, etc.
 
 <div id="built-with"></div>
+
 ### Construido com
 * [Apache HOP version 1.2.0](https://hop.apache.org/)
 
