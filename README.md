@@ -78,12 +78,12 @@ To get a local copy up and running follow these simple steps.
 
 ### Pré-requisitos
 
-1. <a href="https://www.java.com/en/download/help/download_options.html" target="_blank">Java 11</a>
+1. <a href="https://www.java.com/en/download/help/download_options.html" target="_blank">Java 11</a>.
 
 ### Instalação
 
 1. <a href="https://hop.apache.org/manual/latest/getting-started/hop-download-install.html" target="_blank">Aqui</a>
- você encontra instruções para baixar e instalar o Apache HOP para Linux, MacOS ou Windows
+ você encontra instruções para baixar e instalar o Apache HOP para Linux, MacOS ou Windows.
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
