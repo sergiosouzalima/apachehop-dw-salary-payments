@@ -92,7 +92,7 @@ E uma tabela que armazena datas e serve para o DW fornecer dados com base em uma
 <br />
 <div align="center">
   <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments">
-    <img src="images/wrkf02_pipe01.png" alt="Time Dimension">
+    <img src="images/wrkf01_pipe02.png" alt="Time Dimension">
   </a>
 </div>
 
