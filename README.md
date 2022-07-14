@@ -52,7 +52,7 @@
 
 <div id="about-the-project"></div>
 
-* Este é um simples projeto de Data Warehouse (DW) feito com a ferramenta <a href="https://hop.apache.org" target="_blank">Apache HOP</a>.<br />  
+* Este é um simples projeto de Data Warehouse (DW) feito com a ferramenta <a href="https://hop.apache.org" target="_blank">Apache HOP</a>.<br />
 * O projeto carrega arquivos CSV, que contêm dados de funcionários, como nome, salário, departamento, divisão, etc.<br />
 * Para ver os arquivos CSV click <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/tree/master/datasets" target="_blank">aqui</a>
 * Depois, existem passos que armazenam os dados dos arquivos CSV, em tabelas da área de stage.<br />
@@ -152,7 +152,7 @@ Contributions are what make the open source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
-1. Faça um Fork do projeto.
+1. Façça um Fork do projeto.
 2. Crie sua Feature Branch (`git checkout -b feature/AmazingFeature`).
 3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`).
 4. Envie para uma Branch (`git push origin feature/AmazingFeature`).
