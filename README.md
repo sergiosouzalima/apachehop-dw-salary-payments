@@ -56,7 +56,7 @@
 * Em seguida, o projeto move os dados da área de stage para dentro de tabelas de dimensão, que estão na área de DW.<br />
 * Este processo é o início de carga de dados dentro da área do DW.<br />
 * Então, a tabela chamada "tabela fato", que está na área de DW, é alimentada com dados da folha de pagamento, como salário e data de pagamento.
-* Depois de todos esses processos, o DW esta pronto para ser consultado por outras ferramentas, gerando relatorios, graficos, dashboards, etc
+* Depois de todos esses processos, o DW está pronto para ser consultado por outras ferramentas, gerando relatórios, gráficos, dashboards, etc
 
 ### Construido com
 
