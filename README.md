@@ -51,12 +51,12 @@
 ## Sobre o Projeto
 
 * Este é um simples projeto de Data Warehouse (DW) feito com a ferramenta <a href="https://hop.apache.org" target="_blank">Apache HOP</a>.<br />  
-* O projeto carrega arquivos CSV, que contêm dados de funcionarios, como nome, salário, departamento, divisão, etc.<br />
+* O projeto carrega arquivos CSV, que contêm dados de funcionários, como nome, salário, departamento, divisão, etc.<br />
 * Depois, existem passos que armazenam os dados dos arquivos CSV, em tabelas da área de stage.<br />
 * Em seguida, o projeto move os dados da área de stage para dentro de tabelas de dimensão, que estão na área de DW.<br />
 * Este processo é o início de carga de dados dentro da área do DW.<br />
 * Então, a tabela chamada "tabela fato", que está na área de DW, é alimentada com dados da folha de pagamento, como salário e data de pagamento.
-* Depois de todos esses processos, o DW está pronto para ser consultado por outras ferramentas, gerando relatórios, gráficos, dashboards, etc
+* Depois de todos esses processos, o DW está pronto para ser consultado por outras ferramentas, gerando relatórios, gráficos, dashboards, etc.
 
 ### Construido com
 
@@ -65,16 +65,16 @@
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Iniciando
 
 See below instructions on setting up your project locally.<br />
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+### Pre-requisitos
 
-Things you need to use and how to install them.
+Coisas que voce precisa saber para instalar e usar este projeto.
 
-### Installation
+### Instalação
 
 1. Get and install Apache HOP for Linux/MacOS:
 	* https://nim-lang.org/install_unix.html
