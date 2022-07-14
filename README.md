@@ -72,7 +72,7 @@
 
 <div id="stage-area"></div>
 
-## 1 - Stage Area (carga dos arquivos CSV)
+### Stage Area (carga dos arquivos CSV)
 
 <!-- About the project image -->
 <br />
@@ -110,21 +110,21 @@ Como este projeto pode ser usado.
 
 1. Get Apache HOP installed locally [<a href="#installation">Veja a sessão de instalação</a>]
 
-3. Clone the repo
+2. Clone the repo
    ```sh
    git clone https://github.com/sergiosouzalima/apachehop-dw-salary-payments.git
    ```
-4. Cd into apachehop-dw-salary-payments folder
+3. Cd into apachehop-dw-salary-payments folder
    ```sh
    cd apachehop-dw-salary-payments
    ```
-5. Run Apache HOP.
+4. Run Apache HOP.
    ```sh
    ./hop-gui.sh
    ```
-6. In Apache HOP, load the file apachehop-dw-salary-payments/wrkf01_salary_payments.hwf
+5. In Apache HOP, load the file apachehop-dw-salary-payments/wrkf01_salary_payments.hwf
 
-7. Click "play" button, to run the project.
+6. Click "play" button, to run the project.
 
 
 
