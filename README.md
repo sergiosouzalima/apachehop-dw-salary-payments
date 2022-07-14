@@ -40,7 +40,7 @@
         <li><a href="#installation">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Uso</a></li>
+    <li><a href="#usage">Modo de Uso</a></li>
     <li><a href="#contributing">Contribuição</a></li>
     <li><a href="#license">Licença</a></li>
     <li><a href="#contact">Contato</a></li>
@@ -143,6 +143,9 @@ Veja abaixo instruções para configurar e executar este projeto localmente.<br 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- USAGE EXAMPLES -->
+
+<div id="usage"></div>
+
 ## Modo de Uso.
 
 Como este projeto pode ser usado.
