@@ -35,8 +35,8 @@
     <li>
       <a href="#getting-started">Iniciando</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installação</a></li>
+        <li><a href="#prerequisites">Prerequisitos</a></li>
+        <li><a href="#installation">Instalação</a></li>
       </ul>
     </li>
     <li><a href="#usage">Uso</a></li>
@@ -71,7 +71,7 @@
 
 * [Apache HOP version 1.2.0](https://hop.apache.org/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -93,7 +93,7 @@ Things you need to use and how to install them.
 	* https://www.netlify.com/
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -141,7 +141,7 @@ How this project can be used.
     - downloads ``packages.xml`` from <a href="https://nimble.directory/packages.xml">Nimble packages Directory</a>
     - finally, ``mainapp`` generates public/index.html from packages.xml
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -157,14 +157,14 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
@@ -173,7 +173,7 @@ Sergio Lima - [@sergiosouzalima](https://twitter.com/sergiosouzalima) - sergioso
 
 Project Link: [https://github.com/sergiosouzalima/apachehop-dw-salary-payments](https://github.com/sergiosouzalima/apachehop-dw-salary-payments)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
@@ -181,4 +181,4 @@ Project Link: [https://github.com/sergiosouzalima/apachehop-dw-salary-payments](
 * [Apache Hop Brasil on Telegram](https://t.me/apachehop)
 * [This README template by Othneil Drew](https://github.com/othneildrew/Best-README-Template)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
