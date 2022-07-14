@@ -108,23 +108,23 @@ Veja abaixo instruções para configurar e executar este projeto localmente.<br 
 
 Como este projeto pode ser usado.
 
-1. Get Apache HOP installed locally [<a href="#installation">Veja a sessão de instalação</a>]
+1. Tenha o Apache HOP instalado localmente em sua maquina [<a href="#installation">Veja a sessão de instalação</a>]
 
-2. Clone the repo
+2. Faça um clone deste repositorio
    ```sh
    git clone https://github.com/sergiosouzalima/apachehop-dw-salary-payments.git
    ```
-3. Cd into apachehop-dw-salary-payments folder
+3. Entre dentro da pasta criada no item anterior
    ```sh
    cd apachehop-dw-salary-payments
    ```
-4. Run Apache HOP.
+4. Execute o Apache HOP.
    ```sh
    ./hop-gui.sh
    ```
-5. In Apache HOP, load the file apachehop-dw-salary-payments/wrkf01_salary_payments.hwf
+5. Dentro do Apache HOP, carregue o arquivo apachehop-dw-salary-payments/wrkf01_salary_payments.hwf
 
-6. Click "play" button, to run the project.
+6. Click no botão "play" para executar este projeto.
 
 
 
