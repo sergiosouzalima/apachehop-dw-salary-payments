@@ -56,7 +56,7 @@
 
 * Este é um simples projeto de um "Armazém de Dados" ou <a href="https://pt.wikipedia.org/wiki/Armazém_de_dados" target="_blank">Data Warehouse (DW)</a> feito com a ferramenta <a href="https://hop.apache.org" target="_blank">Apache HOP</a>.<br />
 * O projeto carrega arquivos <a href="https://pt.wikipedia.org/wiki/Comma-separated_values#:~:text=Os%20arquivos%20Comma-separated%20values,Excel%20e%20o%20LibreOffice%20Calc" target="_blank">CSV<a>, que contêm dados de funcionários, como nome, salário, departamento, divisão, etc. Para ver os arquivos CSV click <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/tree/master/datasets" target="_blank">aqui</a>.<br />
-* Depois, existem passos que armazenam os dados dos arquivos CSV, em tabelas da área de stage.<br />
+* Depois, existem passos que armazenam os dados dos arquivos CSV, em tabelas da área de stage.(<a href="#stage-area">Stage Area</a>)<br />
 * Em seguida, o projeto move os dados da área de stage para dentro de tabelas de dimensão, que estão na área de DW.<br />
 * Este processo é o início de carga de dados dentro da área do DW.<br />
 * Então, a tabela chamada "tabela fato", que está na área de DW, é alimentada com dados da folha de pagamento, como salário e data de pagamento.
@@ -68,6 +68,21 @@
 * <a href="https://hop.apache.org" target="_blank">Apache HOP version 1.2.0</a>
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
+
+
+## 1 - Stage Area (carga dos arquivos CSV)
+
+<div id="stage-area"></div>
+
+<!-- About the project image -->
+<br />
+<div align="center">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments">
+    <img src="images/wrkf01_pipe01.png" alt="Stage Area">
+  </a>
+</div>
+
+
 
 <!-- GETTING STARTED -->
 ## Iniciando
@@ -111,15 +126,6 @@ Como este projeto pode ser usado.
 7. Click "play" button, to run the project.
 
 
-## 1 - Stage Area (carga dos arquivos CSV)
-
-<!-- About the project image -->
-<br />
-<div align="center">
-  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments">
-    <img src="images/wrkf01_pipe01.png" alt="Stage Area">
-  </a>
-</div>
 
 <!-- CONTRIBUTING -->
 ## Contribuindo
