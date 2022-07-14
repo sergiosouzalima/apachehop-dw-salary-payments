@@ -112,30 +112,6 @@ Como este projeto pode ser usado.
 7. Click "play" button, to run the project.
 
 
-## Do you want this web page online?
-
-### Basic steps
-* Fork or copy this repository.
-* Based on this repository, create and push your own repo to Github.
-* Login to Netlify.
-* Click "New site from Git" botton.
-* Select the repository you created.
-* Click "Deploy site".
-
-### How it works
-- Everytime you do ``git push`` to your Git repository, Netlify:
-  - clones your repo
-  - executes the build command
-  - makes files under public directory accessible from the internet.
-- ``build.sh``:
-  - is the build command executed by Netlify.
-  - when ``build.sh`` is executed, it calls ``mainapp``:
-  - ``mainapp``:
-    - downloads ``packages.xml`` from <a href="https://nimble.directory/packages.xml">Nimble packages Directory</a>
-    - finally, ``mainapp`` generates public/index.html from packages.xml
-
-<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
-
 ## 1 - Stage Area (carga dos arquivos CSV)
 
 <!-- About the project image -->
