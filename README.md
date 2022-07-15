@@ -174,7 +174,7 @@ Como este projeto pode ser usado.
 
 <div id="contributing"></div>
 
-## Contribuindo
+## Contribuição
 
 Contribuições são o que fazem a comunidade open source um ótimo lugar para aprender e criar.
 
@@ -209,7 +209,7 @@ Distribuido sob a Licença do MIT.
 
 <div id="contact"></div>
 
-## Contatos
+## Contato
 
 Sergio Lima - [@sergiosouzalima](https://twitter.com/sergiosouzalima) - sergiosouzalima@gmail.com
 
