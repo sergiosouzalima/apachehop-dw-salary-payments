@@ -178,9 +178,9 @@ Contribuições são o que fazem a comunidade open source um ótimo lugar para a
 
 Qualquer contribuição será **muito bem-vinda**.
 
-Se voce tem uma sugestão para melhorar este projeto, por favor, faça um fork do repositório e crie uma pull request.
+Se você tem uma sugestão para melhorar este projeto, por favor, faça um fork do repositório e crie uma pull request.
 
-Voce pode também abrir uma issue com a tag "enhancement" ou "melhoria".
+Voce pode também abrir uma <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/issues">issue</a> com a tag "enhancement" ou "melhoria".
 
 Não se esqueça de marcar uma estrela neste projeto! Obrigado novamente!
 
