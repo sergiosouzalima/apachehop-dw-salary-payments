@@ -126,6 +126,64 @@
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
+
+<div id="divsion-dim"></div>
+
+### Tabela da Dimensão Divisão
+
+<br />
+<div align="center">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/blob/master/images/wrkf01_pipe03.png">
+    <img src="images/wrkf01_pipe03.png" alt="Division Dimension">
+  </a>
+</div>
+
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
+
+
+<div id="role-dim"></div>
+
+### Tabela da Dimensão Cargo
+
+<br />
+<div align="center">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/blob/master/images/wrkf01_pipe04.png">
+    <img src="images/wrkf01_pipe04.png" alt="Role Dimension">
+  </a>
+</div>
+
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
+
+
+<div id="depto-dim"></div>
+
+### Tabela da Dimensão Departamento
+
+<br />
+<div align="center">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/blob/master/images/wrkf01_pipe05.png">
+    <img src="images/wrkf01_pipe05.png" alt="Dept Dimension">
+  </a>
+</div>
+
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
+
+
+<div id="depto-dim"></div>
+
+### Tabela da Dimensão Funcionário
+
+<br />
+<div align="center">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/blob/master/images/wrkf01_pipe06.png">
+    <img src="images/wrkf01_pipe06.png" alt="Employee Dimension">
+  </a>
+</div>
+
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
+
+
+
 <!-- GETTING STARTED -->
 ## Iniciando
 
