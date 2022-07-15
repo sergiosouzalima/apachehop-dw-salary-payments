@@ -177,7 +177,7 @@ Como este projeto pode ser usado.
 
 ## Contribuição
 
-Contribuições são o que fazem a comunidade open source um ótimo lugar para aprender e criar.
+Contribuições fazem a comunidade open source um ótimo lugar para aprender e criar.
 
 Qualquer contribuição será **muito bem-vinda**.
 
