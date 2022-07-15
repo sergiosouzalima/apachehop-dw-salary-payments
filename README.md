@@ -8,7 +8,7 @@
 -->
 
 <div align="center">
-<h3 align="center">Projeto de Data Warehouse em Apache HOP - WIP README!</h3>
+<h3 align="center">Projeto de Data Warehouse em Apache HOP</h3>
   <p align="center">
     Data Warehouse de Folha de Pagamento.
     <br />
