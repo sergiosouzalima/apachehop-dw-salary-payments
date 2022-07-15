@@ -280,7 +280,7 @@ Não se esqueça de marcar uma estrela neste projeto! Obrigado novamente!
 
 ## Licença
 
-Distribuido sob a Licença do MIT.
+Distribuido sob a Licença do <a href="https://www.google.com/search?q=MIT&sxsrf=ALiCzsYOKt9SgaWDWmsy3nOX8XryBwh-3g%3A1657904031500&source=hp&ei=n5vRYvahHPqd5OUPl6iZ0AM&iflsig=AJiK0e8AAAAAYtGpr9C--8VLpaLHSFrLNXonoqYD4LAI&ved=0ahUKEwi27ffmrfv4AhX6DrkGHRdUBjoQ4dUDCAY&uact=5&oq=MIT&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAguEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBQgAEIAEMg4ILhCABBDHARDRAxDUAjoHCCMQ6gIQJzoKCC4QxwEQ0QMQQ1DoAljtBWCvB2gBcAB4AIABnAGIAboDkgEDMC4zmAEAoAEBsAEK&sclient=gws-wiz">MIT</a>. 
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
