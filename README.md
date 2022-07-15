@@ -56,8 +56,8 @@
 ## Sobre o Projeto
 
 * Este é um simples projeto de um "Armazém de Dados" ou <a href="https://pt.wikipedia.org/wiki/Armazém_de_dados" target="_blank">Data Warehouse (DW)</a> feito com a ferramenta <a href="https://hop.apache.org" target="_blank">Apache HOP</a>.
-* Foi construido com base no curso da Udemy do Prof. Msc. Grimaldo Lopes: <a href="https://www.udemy.com/course/construa-projetos-de-data-warehouse-com-apache-hop" target="_blank">Csontrua Projetos de Data Warehouse com Apache hop</a>, porem com mais recursos.
-* Este projeto usa bancos de dados <a href="https://www.postgresql.org" target="_blank">PostgreSQL</a>..
+* Foi construido com base no curso da Udemy do Prof. Msc. Grimaldo Lopes: <a href="https://www.udemy.com/course/construa-projetos-de-data-warehouse-com-apache-hop" target="_blank">Csontrua Projetos de Data Warehouse com Apache hop</a>, porém com mais recursos.
+* Este projeto usa bancos de dados <a href="https://www.postgresql.org" target="_blank">PostgreSQL</a>.
 
 <div id="how-it-works"></div>
 
