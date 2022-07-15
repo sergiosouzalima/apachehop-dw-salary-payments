@@ -77,6 +77,7 @@
   - Na área do DW, o projeto cria a chamada "dimensão tempo". É uma tabela que armazena datas e serve para o DW fornecer dados com base em uma determinada data.(<a href="#calendar-dim">Dimensão Tempo</a>)
 - E finalmente:
   - Depois de todos esses processos, o DW está pronto para ser consultado por outras ferramentas, gerando relatórios, gráficos, dashboards, etc.
+  - Para executar todos esses arquivos juntos, basta executar somente o arquivo de Workflow: <a href="#wrkf01">wrkf01_salary_payments.hwf</a>
 
 <div id="built-with"></div>
 
@@ -181,6 +182,21 @@
 </div>
 
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
+
+
+<div id="wrkf01"></div>
+
+### Workflow do Projeto
+
+<br />
+<div align="center">
+  <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/blob/master/images/wrkf01.png">
+    <img src="images/wrkf01.png" alt="Workflow">
+  </a>
+</div>
+
+<p align="right">(<a href="#top">voltar ao inicio</a>)</p>
+
 
 
 
