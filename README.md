@@ -180,7 +180,7 @@ Qualquer contribuição será **muito bem-vinda**.
 
 Se você tem uma sugestão para melhorar este projeto, por favor, faça um fork do repositório e crie uma pull request.
 
-Voce pode também abrir uma <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/issues">issue</a> com a tag "enhancement" ou "melhoria".
+Você pode também abrir uma <a href="https://github.com/sergiosouzalima/apachehop-dw-salary-payments/issues">issue</a> com a tag "enhancement" ou "melhoria".
 
 Não se esqueça de marcar uma estrela neste projeto! Obrigado novamente!
 
