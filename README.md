@@ -171,8 +171,10 @@ Como este projeto pode ser usado.
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- CONTRIBUTING -->
-## Contribuindo
 
+<div id="contributing"></div>
+
+## Contribuindo
 
 Contribuições são o que fazem a comunidade open source um ótimo lugar para aprender e criar.
 
@@ -194,6 +196,9 @@ Não se esqueça de marcar uma estrela neste projeto! Obrigado novamente!
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- LICENSE -->
+
+<div id="license"></div>
+
 ## Licença
 
 Distribuido sob a Licença do MIT.
@@ -201,6 +206,9 @@ Distribuido sob a Licença do MIT.
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- CONTACT -->
+
+<div id="contact"></div>
+
 ## Contatos
 
 Sergio Lima - [@sergiosouzalima](https://twitter.com/sergiosouzalima) - sergiosouzalima@gmail.com
@@ -210,6 +218,9 @@ Este projeto no Github: [https://github.com/sergiosouzalima/apachehop-dw-salary-
 <p align="right">(<a href="#top">voltar ao inicio</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
+
+<div id="acknowledgments"></div>
+
 ## Agradecimentos
 
 * [Apache Hop Brasil on Telegram](https://t.me/apachehop)
