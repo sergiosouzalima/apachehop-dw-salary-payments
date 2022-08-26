@@ -2,9 +2,10 @@
 <workflow>
   <name>wrkf01_salary_payments</name>
   <name_sync_with_filename>Y</name_sync_with_filename>
-  <description/>
-  <extended_description/>
-  <workflow_version/>
+  <description>Projeto em Apache Hop - Folha de Pagamento</description>
+  <extended_description>Projeto construido em Apache Hop para o Sistema de Folha de Pagamento.</extended_description>
+  <workflow_version>1.0</workflow_version>
+  <workflow_status>0</workflow_status>
   <created_user>-</created_user>
   <created_date>2022/07/01 16:07:47.060</created_date>
   <modified_user>-</modified_user>
@@ -27,7 +28,7 @@
       <DayOfMonth>1</DayOfMonth>
       <parallel>N</parallel>
       <xloc>32</xloc>
-      <yloc>48</yloc>
+      <yloc>64</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -55,7 +56,7 @@
       </parameters>
       <parallel>N</parallel>
       <xloc>192</xloc>
-      <yloc>48</yloc>
+      <yloc>64</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -83,7 +84,7 @@
       </parameters>
       <parallel>N</parallel>
       <xloc>192</xloc>
-      <yloc>160</yloc>
+      <yloc>176</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -111,7 +112,7 @@
       </parameters>
       <parallel>N</parallel>
       <xloc>496</xloc>
-      <yloc>160</yloc>
+      <yloc>176</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -139,7 +140,7 @@
       </parameters>
       <parallel>N</parallel>
       <xloc>816</xloc>
-      <yloc>48</yloc>
+      <yloc>64</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -167,7 +168,7 @@
       </parameters>
       <parallel>N</parallel>
       <xloc>816</xloc>
-      <yloc>160</yloc>
+      <yloc>176</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -195,7 +196,7 @@
       </parameters>
       <parallel>N</parallel>
       <xloc>1168</xloc>
-      <yloc>48</yloc>
+      <yloc>64</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -205,7 +206,7 @@
       <attributes/>
       <parallel>N</parallel>
       <xloc>1168</xloc>
-      <yloc>160</yloc>
+      <yloc>176</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -233,7 +234,7 @@
       </parameters>
       <parallel>N</parallel>
       <xloc>496</xloc>
-      <yloc>48</yloc>
+      <yloc>64</yloc>
       <attributes_hac/>
     </action>
   </actions>
@@ -296,6 +297,146 @@
     </hop>
   </hops>
   <notepads>
+    <notepad>
+      <note>Stage Area</note>
+      <xloc>176</xloc>
+      <yloc>32</yloc>
+      <width>75</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Carga do Calendario</note>
+      <xloc>144</xloc>
+      <yloc>240</yloc>
+      <width>132</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Dimensao Divisao</note>
+      <xloc>448</xloc>
+      <yloc>32</yloc>
+      <width>117</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Dimensao Cargo</note>
+      <xloc>448</xloc>
+      <yloc>240</yloc>
+      <width>109</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Dimensao Departamento</note>
+      <xloc>752</xloc>
+      <yloc>32</yloc>
+      <width>161</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Dimensao Funcionario</note>
+      <xloc>752</xloc>
+      <yloc>240</yloc>
+      <width>144</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
+    <notepad>
+      <note>Carga da tabela Fato</note>
+      <xloc>1120</xloc>
+      <yloc>32</yloc>
+      <width>133</width>
+      <heigth>26</heigth>
+      <fontname>Ubuntu</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
   </notepads>
   <attributes/>
 </workflow>
